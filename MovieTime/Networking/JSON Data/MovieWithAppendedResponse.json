@@ -1,0 +1,2136 @@
+{
+    "adult": false,
+    "backdrop_path": "/xDMIl84Qo5Tsu62c9DGWhmPI67A.jpg",
+    "belongs_to_collection": {
+        "id": 529892,
+        "name": "Black Panther Collection",
+        "poster_path": "/9ZSPIsxI3TZDgfg0Jzk0RZl4INg.jpg",
+        "backdrop_path": "/yzVxUMYGKjK3GgmVI2BhmbuL9UY.jpg"
+    },
+    "budget": 250000000,
+    "genres": [
+        {
+            "id": 28,
+            "name": "Action"
+        },
+        {
+            "id": 12,
+            "name": "Adventure"
+        },
+        {
+            "id": 878,
+            "name": "Science Fiction"
+        }
+    ],
+    "homepage": "https://wakandaforevertickets.com",
+    "id": 505642,
+    "imdb_id": "tt9114286",
+    "original_language": "en",
+    "original_title": "Black Panther: Wakanda Forever",
+    "overview": "Queen Ramonda, Shuri, M’Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T’Challa’s death.  As the Wakandans strive to embrace their next chapter, the heroes must band together with the help of War Dog Nakia and Everett Ross and forge a new path for the kingdom of Wakanda.",
+    "popularity": 8234.58,
+    "poster_path": "/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
+    "production_companies": [
+        {
+            "id": 420,
+            "logo_path": "/hUzeosd33nzE5MCNsZxCGEKTXaQ.png",
+            "name": "Marvel Studios",
+            "origin_country": "US"
+        }
+    ],
+    "production_countries": [
+        {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+        }
+    ],
+    "release_date": "2022-11-09",
+    "revenue": 835000000,
+    "runtime": 162,
+    "spoken_languages": [
+        {
+            "english_name": "English",
+            "iso_639_1": "en",
+            "name": "English"
+        },
+        {
+            "english_name": "French",
+            "iso_639_1": "fr",
+            "name": "Français"
+        },
+        {
+            "english_name": "Haitian; Haitian Creole",
+            "iso_639_1": "ht",
+            "name": ""
+        },
+        {
+            "english_name": "Spanish",
+            "iso_639_1": "es",
+            "name": "Español"
+        },
+        {
+            "english_name": "Xhosa",
+            "iso_639_1": "xh",
+            "name": ""
+        }
+    ],
+    "status": "Released",
+    "tagline": "Forever.",
+    "title": "Black Panther: Wakanda Forever",
+    "video": false,
+    "vote_average": 7.491,
+    "vote_count": 2732,
+    "release_dates": {
+        "results": [
+            {
+                "iso_3166_1": "US",
+                "release_dates": [
+                    {
+                        "certification": "PG-13",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "Los Angeles, California",
+                        "release_date": "2022-10-26T00:00:00.000Z",
+                        "type": 1
+                    },
+                    {
+                        "certification": "PG-13",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2022-11-11T00:00:00.000Z",
+                        "type": 3
+                    },
+                    {
+                        "certification": "PG-13",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "",
+                        "release_date": "2023-02-01T00:00:00.000Z",
+                        "type": 4
+                    },
+                    {
+                        "certification": "PG-13",
+                        "descriptors": [],
+                        "iso_639_1": "",
+                        "note": "4K Ultra HD / Blu-ray / DVD",
+                        "release_date": "2023-02-07T00:00:00.000Z",
+                        "type": 5
+                    }
+                ]
+            }
+        ]
+    },
+    "videos": {
+        "results": [
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Now Streaming on Disney+",
+                "key": "GR03EwYlVQM",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2023-02-01T15:00:11.000Z",
+                "id": "63dac4463dc313008233d4f5"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "How Namor's Wings Work",
+                "key": "EafV82hFEks",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Behind the Scenes",
+                "official": true,
+                "published_at": "2023-01-31T21:00:09.000Z",
+                "id": "63dac0333dc31300af23eb07"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Tomorrow on Disney+",
+                "key": "PLy1ue1APGo",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2023-01-31T19:00:10.000Z",
+                "id": "63d96f3d3dc31300af2356af"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Making of: Underwater Scenes",
+                "key": "UgFwJ7KBdmg",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Behind the Scenes",
+                "official": true,
+                "published_at": "2023-01-28T18:00:10.000Z",
+                "id": "63d5aafa12b10e007fdad5a1"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Ruth E. Carter Behind the Scenes",
+                "key": "SVfxKCIZ8Ps",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Behind the Scenes",
+                "official": true,
+                "published_at": "2023-01-25T17:00:26.000Z",
+                "id": "63d187ca5a07f5007b0ac726"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Lift Me Up",
+                "key": "amiOQoP3AaY",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2023-01-14T18:00:00.000Z",
+                "id": "63c71011c4f55200945f5e54"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Streaming February 1",
+                "key": "zAbjLWrphHM",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2023-01-04T17:00:37.000Z",
+                "id": "63b5b30641aac400b84abe63"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Meet Namor's Warriors",
+                "key": "x6Mxf9E5nrw",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Behind the Scenes",
+                "official": true,
+                "published_at": "2022-12-21T20:00:30.000Z",
+                "id": "63a83b5ee4b576007a9651db"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Behind the Scenes: The New Black Panther Suit",
+                "key": "v0q2jL_b3QY",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Behind the Scenes",
+                "official": true,
+                "published_at": "2022-12-17T20:00:11.000Z",
+                "id": "63a83b6db3316b00cfbca354"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Ship",
+                "key": "o4AQ-q8AeKo",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2022-12-02T17:00:29.000Z",
+                "id": "638a45451b722c00ab7e3c7c"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "The Cast Answer YOUR Questions!",
+                "key": "2o4dJ3YhPoU",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Featurette",
+                "official": true,
+                "published_at": "2022-11-25T19:00:02.000Z",
+                "id": "6382d4d6fb8346008440598d"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "'Black Panther: Wakanda Forever' with Angela Bassett, Ryan Coogler & more | Academy Conversations",
+                "key": "hWlgFRL7sZc",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Featurette",
+                "official": true,
+                "published_at": "2022-11-22T17:00:09.000Z",
+                "id": "63d11112e72fe8008e60a0fa"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "#1 Movie for 2 Weeks",
+                "key": "8OnkjT3SZV8",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2022-11-20T17:00:06.000Z",
+                "id": "637d6ea87d41aa0093a7d90d"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Wakanda Forever",
+                "key": "IH4Z3tgPjF8",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2022-11-19T17:00:14.000Z",
+                "id": "637d6fcd075288007bbc1ab4"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Global Celebration",
+                "key": "kyMMq8Kz-8I",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2022-11-13T17:00:36.000Z",
+                "id": "63732a0ced2ac200dc7b1583"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "In Theaters Now",
+                "key": "bGid3n9mqbI",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2022-11-12T17:00:25.000Z",
+                "id": "637329e7bf0f630091fb04a8"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Cast Unboxing",
+                "key": "CT0z0LLJXmE",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Featurette",
+                "official": true,
+                "published_at": "2022-11-11T21:00:07.000Z",
+                "id": "637331b7028420007a1d5deb"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Now Playing",
+                "key": "SY_UKKsa_Zc",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2022-11-11T17:00:18.000Z",
+                "id": "63733057ca4f67007fc41be7"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Guess Who",
+                "key": "mqYGw8oaroQ",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Featurette",
+                "official": true,
+                "published_at": "2022-11-11T04:28:45.000Z",
+                "id": "637341a8bf0f630091fb1153"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Dream Team-Ups?",
+                "key": "e_TqrYihR7E",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Featurette",
+                "official": true,
+                "published_at": "2022-11-10T23:30:07.000Z",
+                "id": "637347df8fdda9009835d984"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "In Theaters Tonight",
+                "key": "Sa13L_4gfAQ",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2022-11-10T14:15:01.000Z",
+                "id": "636d3b0cd46537009b892033"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "In Theaters Tomorrow Night",
+                "key": "7ZORrCcXo24",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2022-11-09T19:30:00.000Z",
+                "id": "636c5ca8d7fbda00bb8ee39f"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Ryan Coogler",
+                "key": "Z-alXY_6f94",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Behind the Scenes",
+                "official": true,
+                "published_at": "2022-11-07T17:00:25.000Z",
+                "id": "636942b0693e20008257a47d"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Live",
+                "key": "R7esI4S_uYo",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2022-11-05T16:07:01.000Z",
+                "id": "6366f42066565a007a44b03a"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "One Week",
+                "key": "P5vp_QPttf4",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2022-11-04T15:30:05.000Z",
+                "id": "6366f48d9653f6007d9e2044"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Lift Me Up",
+                "key": "8ML-5AAiM1Y",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2022-11-03T17:00:08.000Z",
+                "id": "636445be7f6c8d00825929db"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Namor",
+                "key": "o77h301-VIE",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Featurette",
+                "official": true,
+                "published_at": "2022-11-01T17:00:28.000Z",
+                "id": "636152c540d0fe007d44084a"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Remember",
+                "key": "w_-2mYtc1iY",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2022-11-01T16:00:34.000Z",
+                "id": "6361457e1dbc880090f59f45"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Time",
+                "key": "UH0KeoB72zs",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2022-10-27T17:00:16.000Z",
+                "id": "635b503635c30a00810f6803"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Throne",
+                "key": "CV3t6OfAjKs",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2022-10-26T17:15:00.000Z",
+                "id": "63596f0aa13533007c4658ef"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Long Live Wakanda",
+                "key": "_cCrp8gDsVA",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2022-10-21T03:56:55.000Z",
+                "id": "63521cd0076ce8007a5202f3"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "One Month",
+                "key": "LjO87EB_YO8",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2022-10-11T18:00:06.000Z",
+                "id": "634719a99bcd0f008aafdf9d"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Return to Wakanda",
+                "key": "V5ym9Sqc9_Y",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Featurette",
+                "official": true,
+                "published_at": "2022-10-11T13:47:41.000Z",
+                "id": "6345898e1b7c59007e6e9a11"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Tickets on Sale",
+                "key": "x77m59IE6Qk",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2022-10-03T22:00:32.000Z",
+                "id": "633d47285ab81a0079bf5dab"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Official Trailer",
+                "key": "_Z3QKkl1WyM",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Trailer",
+                "official": true,
+                "published_at": "2022-10-03T13:00:01.000Z",
+                "id": "633ae8c1175051007c41e653"
+            },
+            {
+                "iso_639_1": "en",
+                "iso_3166_1": "US",
+                "name": "Official Teaser",
+                "key": "RlOB3UALvrQ",
+                "site": "YouTube",
+                "size": 1080,
+                "type": "Teaser",
+                "official": true,
+                "published_at": "2022-07-24T01:22:23.000Z",
+                "id": "62dc9f30957e6d0056eff18d"
+            }
+        ]
+    },
+    "watch/providers": {
+        "results": {
+            "AD": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=AD",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 7
+                    }
+                ]
+            },
+            "AL": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=AL",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 7
+                    }
+                ]
+            },
+            "AR": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=AR",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 1
+                    }
+                ]
+            },
+            "AT": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=AT",
+                "buy": [
+                    {
+                        "logo_path": "/5NyLm42TmCqCMOZFvH4fcoSNKEW.jpg",
+                        "provider_id": 10,
+                        "provider_name": "Amazon Video",
+                        "display_priority": 4
+                    },
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 5
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 7
+                    },
+                    {
+                        "logo_path": "/5GEbAhFW2S5T8zVc1MNvz00pIzM.jpg",
+                        "provider_id": 35,
+                        "provider_name": "Rakuten TV",
+                        "display_priority": 9
+                    },
+                    {
+                        "logo_path": "/cksgBjTHV3rzAVaO2zUyS1mH4Ke.jpg",
+                        "provider_id": 40,
+                        "provider_name": "Chili",
+                        "display_priority": 11
+                    },
+                    {
+                        "logo_path": "/shq88b09gTBYC4hA7K7MUL8Q4zP.jpg",
+                        "provider_id": 68,
+                        "provider_name": "Microsoft Store",
+                        "display_priority": 13
+                    },
+                    {
+                        "logo_path": "/2PTFxgrswnEuK0szl87iSd8Yszz.jpg",
+                        "provider_id": 20,
+                        "provider_name": "maxdome Store",
+                        "display_priority": 15
+                    },
+                    {
+                        "logo_path": "/2pCbao1J9s0DMak2KKnEzmzHni8.jpg",
+                        "provider_id": 130,
+                        "provider_name": "Sky Store",
+                        "display_priority": 24
+                    }
+                ],
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 2
+                    }
+                ]
+            },
+            "AU": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=AU",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 2
+                    }
+                ],
+                "buy": [
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 10
+                    },
+                    {
+                        "logo_path": "/5NyLm42TmCqCMOZFvH4fcoSNKEW.jpg",
+                        "provider_id": 10,
+                        "provider_name": "Amazon Video",
+                        "display_priority": 12
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 14
+                    },
+                    {
+                        "logo_path": "/shq88b09gTBYC4hA7K7MUL8Q4zP.jpg",
+                        "provider_id": 68,
+                        "provider_name": "Microsoft Store",
+                        "display_priority": 18
+                    },
+                    {
+                        "logo_path": "/oIkQkEkwfmcG7IGpRR1NB8frZZM.jpg",
+                        "provider_id": 192,
+                        "provider_name": "YouTube",
+                        "display_priority": 22
+                    },
+                    {
+                        "logo_path": "/zXDDsD9M5vO7lqoqlBQCOcZtKBS.jpg",
+                        "provider_id": 429,
+                        "provider_name": "Telstra TV",
+                        "display_priority": 32
+                    }
+                ]
+            },
+            "BA": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=BA",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 7
+                    }
+                ]
+            },
+            "BE": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=BE",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 1
+                    }
+                ],
+                "buy": [
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 6
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 7
+                    },
+                    {
+                        "logo_path": "/5GEbAhFW2S5T8zVc1MNvz00pIzM.jpg",
+                        "provider_id": 35,
+                        "provider_name": "Rakuten TV",
+                        "display_priority": 10
+                    }
+                ]
+            },
+            "BG": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=BG",
+                "buy": [
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 2
+                    }
+                ],
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 18
+                    }
+                ]
+            },
+            "BO": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=BO",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 2
+                    }
+                ]
+            },
+            "BR": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=BR",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 1
+                    }
+                ]
+            },
+            "CA": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=CA",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 1
+                    }
+                ],
+                "buy": [
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 6
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 8
+                    },
+                    {
+                        "logo_path": "/yNr05VQlKK4dI0Ncwf9InIVGKs9.jpg",
+                        "provider_id": 140,
+                        "provider_name": "Cineplex",
+                        "display_priority": 13
+                    },
+                    {
+                        "logo_path": "/shq88b09gTBYC4hA7K7MUL8Q4zP.jpg",
+                        "provider_id": 68,
+                        "provider_name": "Microsoft Store",
+                        "display_priority": 16
+                    },
+                    {
+                        "logo_path": "/oIkQkEkwfmcG7IGpRR1NB8frZZM.jpg",
+                        "provider_id": 192,
+                        "provider_name": "YouTube",
+                        "display_priority": 30
+                    },
+                    {
+                        "logo_path": "/5NyLm42TmCqCMOZFvH4fcoSNKEW.jpg",
+                        "provider_id": 10,
+                        "provider_name": "Amazon Video",
+                        "display_priority": 58
+                    }
+                ]
+            },
+            "CH": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=CH",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 2
+                    }
+                ]
+            },
+            "CL": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=CL",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 1
+                    },
+                    {
+                        "logo_path": "/cDzkhgvozSr4GW2aRdV22uDuFpw.jpg",
+                        "provider_id": 339,
+                        "provider_name": "Movistar Play",
+                        "display_priority": 9
+                    }
+                ]
+            },
+            "CO": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=CO",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 1
+                    },
+                    {
+                        "logo_path": "/cDzkhgvozSr4GW2aRdV22uDuFpw.jpg",
+                        "provider_id": 339,
+                        "provider_name": "Movistar Play",
+                        "display_priority": 9
+                    }
+                ]
+            },
+            "CR": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=CR",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 2
+                    }
+                ]
+            },
+            "CZ": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=CZ",
+                "buy": [
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 3
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 4
+                    }
+                ],
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 24
+                    }
+                ]
+            },
+            "DE": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=DE",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 2
+                    }
+                ],
+                "buy": [
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 4
+                    },
+                    {
+                        "logo_path": "/5NyLm42TmCqCMOZFvH4fcoSNKEW.jpg",
+                        "provider_id": 10,
+                        "provider_name": "Amazon Video",
+                        "display_priority": 7
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 8
+                    },
+                    {
+                        "logo_path": "/oIkQkEkwfmcG7IGpRR1NB8frZZM.jpg",
+                        "provider_id": 192,
+                        "provider_name": "YouTube",
+                        "display_priority": 10
+                    },
+                    {
+                        "logo_path": "/2pCbao1J9s0DMak2KKnEzmzHni8.jpg",
+                        "provider_id": 130,
+                        "provider_name": "Sky Store",
+                        "display_priority": 11
+                    },
+                    {
+                        "logo_path": "/5GEbAhFW2S5T8zVc1MNvz00pIzM.jpg",
+                        "provider_id": 35,
+                        "provider_name": "Rakuten TV",
+                        "display_priority": 14
+                    },
+                    {
+                        "logo_path": "/cksgBjTHV3rzAVaO2zUyS1mH4Ke.jpg",
+                        "provider_id": 40,
+                        "provider_name": "Chili",
+                        "display_priority": 16
+                    },
+                    {
+                        "logo_path": "/2PTFxgrswnEuK0szl87iSd8Yszz.jpg",
+                        "provider_id": 20,
+                        "provider_name": "maxdome Store",
+                        "display_priority": 17
+                    },
+                    {
+                        "logo_path": "/uULoezj2skPc6amfwru72UPjYXV.jpg",
+                        "provider_id": 178,
+                        "provider_name": "MagentaTV",
+                        "display_priority": 24
+                    },
+                    {
+                        "logo_path": "/shq88b09gTBYC4hA7K7MUL8Q4zP.jpg",
+                        "provider_id": 68,
+                        "provider_name": "Microsoft Store",
+                        "display_priority": 34
+                    }
+                ]
+            },
+            "DK": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=DK",
+                "buy": [
+                    {
+                        "logo_path": "/cvl65OJnz14LUlC3yGK1KHj8UYs.jpg",
+                        "provider_id": 76,
+                        "provider_name": "Viaplay",
+                        "display_priority": 6
+                    },
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 7
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 8
+                    },
+                    {
+                        "logo_path": "/shq88b09gTBYC4hA7K7MUL8Q4zP.jpg",
+                        "provider_id": 68,
+                        "provider_name": "Microsoft Store",
+                        "display_priority": 10
+                    },
+                    {
+                        "logo_path": "/5GEbAhFW2S5T8zVc1MNvz00pIzM.jpg",
+                        "provider_id": 35,
+                        "provider_name": "Rakuten TV",
+                        "display_priority": 18
+                    },
+                    {
+                        "logo_path": "/dNcz2AZHPEgt4BIKJe56r4visuK.jpg",
+                        "provider_id": 426,
+                        "provider_name": "SF Anytime",
+                        "display_priority": 21
+                    }
+                ],
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 1
+                    }
+                ]
+            },
+            "DO": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=DO",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 30
+                    }
+                ]
+            },
+            "EC": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=EC",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 1
+                    }
+                ]
+            },
+            "EE": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=EE",
+                "buy": [
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 3
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 4
+                    }
+                ],
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 24
+                    }
+                ]
+            },
+            "EG": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=EG",
+                "buy": [
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 2
+                    }
+                ]
+            },
+            "ES": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=ES",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 2
+                    }
+                ],
+                "buy": [
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 4
+                    },
+                    {
+                        "logo_path": "/5GEbAhFW2S5T8zVc1MNvz00pIzM.jpg",
+                        "provider_id": 35,
+                        "provider_name": "Rakuten TV",
+                        "display_priority": 11
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 13
+                    },
+                    {
+                        "logo_path": "/shq88b09gTBYC4hA7K7MUL8Q4zP.jpg",
+                        "provider_id": 68,
+                        "provider_name": "Microsoft Store",
+                        "display_priority": 14
+                    },
+                    {
+                        "logo_path": "/5NyLm42TmCqCMOZFvH4fcoSNKEW.jpg",
+                        "provider_id": 10,
+                        "provider_name": "Amazon Video",
+                        "display_priority": 35
+                    }
+                ]
+            },
+            "FI": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=FI",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 1
+                    }
+                ],
+                "buy": [
+                    {
+                        "logo_path": "/cvl65OJnz14LUlC3yGK1KHj8UYs.jpg",
+                        "provider_id": 76,
+                        "provider_name": "Viaplay",
+                        "display_priority": 5
+                    },
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 10
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 11
+                    },
+                    {
+                        "logo_path": "/shq88b09gTBYC4hA7K7MUL8Q4zP.jpg",
+                        "provider_id": 68,
+                        "provider_name": "Microsoft Store",
+                        "display_priority": 12
+                    },
+                    {
+                        "logo_path": "/5GEbAhFW2S5T8zVc1MNvz00pIzM.jpg",
+                        "provider_id": 35,
+                        "provider_name": "Rakuten TV",
+                        "display_priority": 17
+                    },
+                    {
+                        "logo_path": "/3QsJbibv5dFW2IYuXbTjxDmGGRZ.jpg",
+                        "provider_id": 423,
+                        "provider_name": "Blockbuster",
+                        "display_priority": 18
+                    },
+                    {
+                        "logo_path": "/dNcz2AZHPEgt4BIKJe56r4visuK.jpg",
+                        "provider_id": 426,
+                        "provider_name": "SF Anytime",
+                        "display_priority": 19
+                    }
+                ]
+            },
+            "GB": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=GB",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 1
+                    }
+                ]
+            },
+            "GR": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=GR",
+                "buy": [
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 2
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 3
+                    }
+                ],
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 20
+                    }
+                ]
+            },
+            "GT": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=GT",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 2
+                    }
+                ]
+            },
+            "HK": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=HK",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 37
+                    }
+                ],
+                "buy": [
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 5
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 13
+                    }
+                ]
+            },
+            "HN": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=HN",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 2
+                    }
+                ]
+            },
+            "HR": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=HR",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 38
+                    }
+                ]
+            },
+            "HU": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=HU",
+                "buy": [
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 3
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 4
+                    },
+                    {
+                        "logo_path": "/oIkQkEkwfmcG7IGpRR1NB8frZZM.jpg",
+                        "provider_id": 192,
+                        "provider_name": "YouTube",
+                        "display_priority": 1000
+                    }
+                ],
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 24
+                    }
+                ]
+            },
+            "ID": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=ID",
+                "flatrate": [
+                    {
+                        "logo_path": "/7Fl8ylPDclt3ZYgNbW2t7rbZE9I.jpg",
+                        "provider_id": 122,
+                        "provider_name": "Hotstar",
+                        "display_priority": 3
+                    }
+                ]
+            },
+            "IE": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=IE",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 2
+                    }
+                ]
+            },
+            "IL": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=IL",
+                "buy": [
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 28
+                    }
+                ]
+            },
+            "IN": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=IN",
+                "flatrate": [
+                    {
+                        "logo_path": "/7Fl8ylPDclt3ZYgNbW2t7rbZE9I.jpg",
+                        "provider_id": 122,
+                        "provider_name": "Hotstar",
+                        "display_priority": 2
+                    }
+                ],
+                "buy": [
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 10
+                    },
+                    {
+                        "logo_path": "/oIkQkEkwfmcG7IGpRR1NB8frZZM.jpg",
+                        "provider_id": 192,
+                        "provider_name": "YouTube",
+                        "display_priority": 13
+                    }
+                ]
+            },
+            "IS": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=IS",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 1
+                    }
+                ],
+                "buy": [
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 4
+                    },
+                    {
+                        "logo_path": "/cvl65OJnz14LUlC3yGK1KHj8UYs.jpg",
+                        "provider_id": 76,
+                        "provider_name": "Viaplay",
+                        "display_priority": 29
+                    }
+                ]
+            },
+            "IT": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=IT",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 2
+                    }
+                ],
+                "buy": [
+                    {
+                        "logo_path": "/5GEbAhFW2S5T8zVc1MNvz00pIzM.jpg",
+                        "provider_id": 35,
+                        "provider_name": "Rakuten TV",
+                        "display_priority": 3
+                    },
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 4
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 7
+                    },
+                    {
+                        "logo_path": "/cksgBjTHV3rzAVaO2zUyS1mH4Ke.jpg",
+                        "provider_id": 40,
+                        "provider_name": "Chili",
+                        "display_priority": 11
+                    },
+                    {
+                        "logo_path": "/shq88b09gTBYC4hA7K7MUL8Q4zP.jpg",
+                        "provider_id": 68,
+                        "provider_name": "Microsoft Store",
+                        "display_priority": 22
+                    },
+                    {
+                        "logo_path": "/5NyLm42TmCqCMOZFvH4fcoSNKEW.jpg",
+                        "provider_id": 10,
+                        "provider_name": "Amazon Video",
+                        "display_priority": 39
+                    }
+                ]
+            },
+            "JP": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=JP",
+                "buy": [
+                    {
+                        "logo_path": "/5NyLm42TmCqCMOZFvH4fcoSNKEW.jpg",
+                        "provider_id": 10,
+                        "provider_name": "Amazon Video",
+                        "display_priority": 6
+                    },
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 7
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 9
+                    }
+                ],
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 4
+                    }
+                ]
+            },
+            "KR": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=KR",
+                "buy": [
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 7
+                    }
+                ],
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 2
+                    }
+                ]
+            },
+            "LI": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=LI",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 30
+                    }
+                ]
+            },
+            "LT": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=LT",
+                "buy": [
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 3
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 4
+                    }
+                ],
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 25
+                    }
+                ]
+            },
+            "LV": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=LV",
+                "buy": [
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 3
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 4
+                    }
+                ],
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 24
+                    }
+                ]
+            },
+            "MD": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=MD",
+                "buy": [
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 1000
+                    }
+                ]
+            },
+            "MK": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=MK",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 7
+                    }
+                ]
+            },
+            "MT": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=MT",
+                "buy": [
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 1000
+                    }
+                ],
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 7
+                    }
+                ]
+            },
+            "MX": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=MX",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 2
+                    }
+                ]
+            },
+            "MY": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=MY",
+                "flatrate": [
+                    {
+                        "logo_path": "/7Fl8ylPDclt3ZYgNbW2t7rbZE9I.jpg",
+                        "provider_id": 122,
+                        "provider_name": "Hotstar",
+                        "display_priority": 0
+                    }
+                ]
+            },
+            "NE": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=NE",
+                "buy": [
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 1000
+                    }
+                ]
+            },
+            "NL": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=NL",
+                "buy": [
+                    {
+                        "logo_path": "/llmnYOyknekZsXtkCaazKjhTLvG.jpg",
+                        "provider_id": 71,
+                        "provider_name": "Pathé Thuis",
+                        "display_priority": 7
+                    },
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 8
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 11
+                    },
+                    {
+                        "logo_path": "/shq88b09gTBYC4hA7K7MUL8Q4zP.jpg",
+                        "provider_id": 68,
+                        "provider_name": "Microsoft Store",
+                        "display_priority": 12
+                    },
+                    {
+                        "logo_path": "/5GEbAhFW2S5T8zVc1MNvz00pIzM.jpg",
+                        "provider_id": 35,
+                        "provider_name": "Rakuten TV",
+                        "display_priority": 13
+                    },
+                    {
+                        "logo_path": "/5NyLm42TmCqCMOZFvH4fcoSNKEW.jpg",
+                        "provider_id": 10,
+                        "provider_name": "Amazon Video",
+                        "display_priority": 39
+                    }
+                ],
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 1
+                    }
+                ]
+            },
+            "NO": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=NO",
+                "buy": [
+                    {
+                        "logo_path": "/dNcz2AZHPEgt4BIKJe56r4visuK.jpg",
+                        "provider_id": 426,
+                        "provider_name": "SF Anytime",
+                        "display_priority": 19
+                    }
+                ],
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 1
+                    }
+                ]
+            },
+            "NZ": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=NZ",
+                "buy": [
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 4
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 7
+                    },
+                    {
+                        "logo_path": "/shq88b09gTBYC4hA7K7MUL8Q4zP.jpg",
+                        "provider_id": 68,
+                        "provider_name": "Microsoft Store",
+                        "display_priority": 10
+                    }
+                ],
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 3
+                    }
+                ]
+            },
+            "PE": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=PE",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 1
+                    }
+                ]
+            },
+            "PL": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=PL",
+                "buy": [
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 1
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 3
+                    },
+                    {
+                        "logo_path": "/oIkQkEkwfmcG7IGpRR1NB8frZZM.jpg",
+                        "provider_id": 192,
+                        "provider_name": "YouTube",
+                        "display_priority": 8
+                    },
+                    {
+                        "logo_path": "/cksgBjTHV3rzAVaO2zUyS1mH4Ke.jpg",
+                        "provider_id": 40,
+                        "provider_name": "Chili",
+                        "display_priority": 10
+                    }
+                ],
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 30
+                    }
+                ]
+            },
+            "PT": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=PT",
+                "buy": [
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 4
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 5
+                    },
+                    {
+                        "logo_path": "/oIkQkEkwfmcG7IGpRR1NB8frZZM.jpg",
+                        "provider_id": 192,
+                        "provider_name": "YouTube",
+                        "display_priority": 7
+                    },
+                    {
+                        "logo_path": "/5GEbAhFW2S5T8zVc1MNvz00pIzM.jpg",
+                        "provider_id": 35,
+                        "provider_name": "Rakuten TV",
+                        "display_priority": 8
+                    }
+                ],
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 1
+                    }
+                ]
+            },
+            "PY": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=PY",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 2
+                    }
+                ]
+            },
+            "RO": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=RO",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 19
+                    }
+                ]
+            },
+            "RS": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=RS",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 7
+                    }
+                ]
+            },
+            "SE": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=SE",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 1
+                    }
+                ],
+                "buy": [
+                    {
+                        "logo_path": "/cvl65OJnz14LUlC3yGK1KHj8UYs.jpg",
+                        "provider_id": 76,
+                        "provider_name": "Viaplay",
+                        "display_priority": 6
+                    },
+                    {
+                        "logo_path": "/shq88b09gTBYC4hA7K7MUL8Q4zP.jpg",
+                        "provider_id": 68,
+                        "provider_name": "Microsoft Store",
+                        "display_priority": 7
+                    },
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 8
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 9
+                    },
+                    {
+                        "logo_path": "/5GEbAhFW2S5T8zVc1MNvz00pIzM.jpg",
+                        "provider_id": 35,
+                        "provider_name": "Rakuten TV",
+                        "display_priority": 17
+                    },
+                    {
+                        "logo_path": "/dNcz2AZHPEgt4BIKJe56r4visuK.jpg",
+                        "provider_id": 426,
+                        "provider_name": "SF Anytime",
+                        "display_priority": 19
+                    }
+                ]
+            },
+            "SG": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=SG",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 2
+                    }
+                ]
+            },
+            "SI": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=SI",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 7
+                    }
+                ],
+                "buy": [
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 31
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 1000
+                    }
+                ]
+            },
+            "SK": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=SK",
+                "buy": [
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 5
+                    }
+                ],
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 40
+                    }
+                ]
+            },
+            "SM": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=SM",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 30
+                    }
+                ]
+            },
+            "SV": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=SV",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 33
+                    }
+                ]
+            },
+            "TH": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=TH",
+                "flatrate": [
+                    {
+                        "logo_path": "/7Fl8ylPDclt3ZYgNbW2t7rbZE9I.jpg",
+                        "provider_id": 122,
+                        "provider_name": "Hotstar",
+                        "display_priority": 0
+                    }
+                ]
+            },
+            "TW": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=TW",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 2
+                    }
+                ],
+                "buy": [
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 3
+                    },
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 7
+                    }
+                ]
+            },
+            "UG": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=UG",
+                "buy": [
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 1000
+                    }
+                ]
+            },
+            "US": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=US",
+                "buy": [
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 4
+                    },
+                    {
+                        "logo_path": "/5NyLm42TmCqCMOZFvH4fcoSNKEW.jpg",
+                        "provider_id": 10,
+                        "provider_name": "Amazon Video",
+                        "display_priority": 12
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 13
+                    },
+                    {
+                        "logo_path": "/oIkQkEkwfmcG7IGpRR1NB8frZZM.jpg",
+                        "provider_id": 192,
+                        "provider_name": "YouTube",
+                        "display_priority": 14
+                    },
+                    {
+                        "logo_path": "/21dEscfO8n1tL35k4DANixhffsR.jpg",
+                        "provider_id": 7,
+                        "provider_name": "Vudu",
+                        "display_priority": 36
+                    },
+                    {
+                        "logo_path": "/shq88b09gTBYC4hA7K7MUL8Q4zP.jpg",
+                        "provider_id": 68,
+                        "provider_name": "Microsoft Store",
+                        "display_priority": 47
+                    },
+                    {
+                        "logo_path": "/gbyLHzl4eYP0oP9oJZ2oKbpkhND.jpg",
+                        "provider_id": 279,
+                        "provider_name": "Redbox",
+                        "display_priority": 48
+                    },
+                    {
+                        "logo_path": "/xL9SUR63qrEjFZAhtsipskeAMR7.jpg",
+                        "provider_id": 358,
+                        "provider_name": "DIRECTV",
+                        "display_priority": 51
+                    },
+                    {
+                        "logo_path": "/kJlVJLgbNPvKDYC0YMp3yA2OKq2.jpg",
+                        "provider_id": 352,
+                        "provider_name": "AMC on Demand",
+                        "display_priority": 130
+                    }
+                ],
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 2
+                    }
+                ]
+            },
+            "UY": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=UY",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 33
+                    }
+                ]
+            },
+            "VE": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=VE",
+                "flatrate": [
+                    {
+                        "logo_path": "/7rwgEs15tFwyR9NPQ5vpzxTj19Q.jpg",
+                        "provider_id": 337,
+                        "provider_name": "Disney Plus",
+                        "display_priority": 1
+                    }
+                ]
+            },
+            "ZA": {
+                "link": "https://www.themoviedb.org/movie/505642-black-panther-wakanda-forever/watch?locale=ZA",
+                "buy": [
+                    {
+                        "logo_path": "/peURlLlr8jggOwK53fJ5wdQl05y.jpg",
+                        "provider_id": 2,
+                        "provider_name": "Apple iTunes",
+                        "display_priority": 2
+                    },
+                    {
+                        "logo_path": "/tbEdFQDwx5LEVr8WpSeXQSIirVq.jpg",
+                        "provider_id": 3,
+                        "provider_name": "Google Play Movies",
+                        "display_priority": 3
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -58,7 +58,7 @@ struct MovieListRow: View {
                 .font(.title3.bold())
                 .lineLimit(2, reservesSpace: true)
             
-            Text(movie.releasedDate)
+            Text(movie.formattedReleaseDate)
                 .foregroundColor(.secondary)
         }
         .padding(12)
