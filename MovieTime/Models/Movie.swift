@@ -58,6 +58,10 @@ struct Movie: Identifiable, Codable {
         return theatricalRelease.certification
     }
     
+    var mainVideos: [Video]? {
+        return self.videos?.results.filtered(by: [.Trailer, .Teaser]).sortedByPriority()
+    }
+    
     var rating: String {
         let numberFormatter = NumberFormatter()
         numberFormatter.numberStyle = .decimal

@@ -35,6 +35,28 @@ struct Video: Identifiable, Codable {
 
 
 // MARK: - Extensions
+// MARK: - VideoSitesURL
+extension Video {
+    func thumbnailURL() -> URL? {
+        switch self.site {
+        case "YouTube":
+            return VideoSitesURL.YouTube(videoID: self.key).thumbnail()
+        default:
+            return nil
+        }
+    }
+    
+    func url(autoplay: Bool = false) -> URL? {
+        switch self.site {
+        case "YouTube":
+            return VideoSitesURL.YouTube(videoID: self.key).url(autoplay: autoplay)
+        default:
+            return nil
+        }
+    }
+}
+
+// MARK: - Array<Video>
 extension Array<Video> {
     func sortedByPriority() -> [Video] {
         var sortedArray = [Video]()
