@@ -16,14 +16,13 @@ struct VideoView: View {
         height * aspectRatio
     }
     
-    
     var body: some View {
         VStack {
             AsyncImage(url: thumbnailURL) { image in
                 image.resizable()
             } placeholder: {
                 Rectangle()
-                    .fill(.black.opacity(0.85))
+                    .fill(.black.opacity(0.9))
             }
             .aspectRatio(aspectRatio, contentMode: .fit)
             .frame(height: height)

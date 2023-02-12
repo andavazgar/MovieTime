@@ -8,5 +8,5 @@
 import Foundation
 
 struct AppendedResults<T: Codable>: Codable {
-    let results: [T]
+    let results: T
 }

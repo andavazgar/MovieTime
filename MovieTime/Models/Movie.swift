@@ -18,8 +18,9 @@ struct Movie: Identifiable, Codable {
     let voteCount: Int
     let genres: [Genre]?
     let runtime: Int
-    let releaseDates: AppendedResults<ReleaseSchedule>?
-    let videos: AppendedResults<Video>?
+    let releaseDates: AppendedResults<[ReleaseSchedule]>?
+    let watchProviders: AppendedResults<[String: WatchOptions]>?
+    let videos: AppendedResults<[Video]>?
     let adult: Bool
     let posterPath: String
     let backdropPath: String
@@ -58,6 +59,13 @@ struct Movie: Identifiable, Codable {
         return theatricalRelease.certification
     }
     
+    var watchOptions: [CountryWatchOptions]? {
+        let countries = ["CA", "US"]
+        return watchProviders?.results
+            .filter { countries.contains($0.key) }
+            .map { CountryWatchOptions(name: $0.key, watchOptions: $0.value) }
+    }
+    
     var mainVideos: [Video]? {
         return self.videos?.results.filtered(by: [.Trailer, .Teaser]).sortedByPriority()
     }
@@ -72,7 +80,27 @@ struct Movie: Identifiable, Codable {
 
 
 // MARK: - Extensions
-
+// MARK: - CodingKeys
+extension Movie {
+    enum CodingKeys: String, CodingKey {
+        case id
+        case title
+        case originalTitle
+        case overview
+        case originalLanguage
+        case releaseDate
+        case voteAverage
+        case voteCount
+        case genres
+        case runtime
+        case releaseDates
+        case watchProviders = "watch/providers"
+        case videos
+        case adult
+        case posterPath
+        case backdropPath
+    }
+}
 // MARK: - Genre
 extension Movie {
     struct Genre: Identifiable, Codable {

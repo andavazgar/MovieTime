@@ -25,6 +25,7 @@ struct MovieDetails: View {
                     movieTitle
                     generalInfo
                     posterAndOverview
+                    whereToWatch
                     videos
                 }
                 .padding()
@@ -70,12 +71,20 @@ struct MovieDetails: View {
     }
     
     @ViewBuilder
+    private var whereToWatch: some View {
+        if let watchOptions = movie.watchOptions {
+            Section {
+                sectionHeader("Where To Watch")
+                WatchProvidersView(watchOptions: watchOptions)
+            }
+        }
+    }
+    
+    @ViewBuilder
     private var videos: some View {
         if let videos = movie.mainVideos {
             Section {
-                Text("Videos")
-                    .font(.title2)
-                    .padding(.top)
+                sectionHeader("Videos")
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     LazyHStack {
@@ -94,6 +103,12 @@ struct MovieDetails: View {
                 })
             }
         }
+    }
+    
+    private func sectionHeader(_ title: String) -> some View {
+        Text(title)
+            .font(.title2)
+            .padding(.top)
     }
 }
 
