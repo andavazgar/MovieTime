@@ -73,9 +73,23 @@ struct MovieDetails: View {
     @ViewBuilder
     private var whereToWatch: some View {
         if let watchOptions = movie.watchOptions {
-            Section {
-                sectionHeader("Where To Watch")
-                WatchProvidersView(watchOptions: watchOptions)
+            let sectionTitle = "Where To Watch"
+            
+            if watchOptions.count > 1 {
+                CollapsibleSection(isCollapsed: true) {
+                    sectionHeader("\(sectionTitle) (\(watchOptions.count))")
+                } pinnedContent: {
+                    WatchProvidersView(watchOptions: [watchOptions[0]])
+                } collapsibleContent: {
+                    WatchProvidersView(watchOptions: Array(watchOptions[1..<watchOptions.count]))
+                }
+            } else {
+                CollapsibleSection(isCollapsed: false) {
+                    sectionHeader(sectionTitle)
+                } collapsibleContent: {
+                    WatchProvidersView(watchOptions: watchOptions)
+                }
+
             }
         }
     }

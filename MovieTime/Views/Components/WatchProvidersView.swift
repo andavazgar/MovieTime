@@ -11,13 +11,9 @@ struct WatchProvidersView: View {
     let watchOptions: [CountryWatchOptions]
     
     var body: some View {
-        ForEach(watchOptions, id: \.name) { country in
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 16) {
-                    Text(country.flag)
-                        .scaleEffect(1.7)
-                        .padding(.horizontal, 8)
-                    
+        VStack {
+            ForEach(watchOptions, id: \.name) { country in
+                ScrollView(.horizontal, showsIndicators: false) {
                     VStack(alignment: .leading) {
                         ForEach(WatchOptionTypes.allCases, id: \.self) { watchOption in
                             if let providers = country.watchOptions.getProviders(for: watchOption) {
@@ -38,14 +34,22 @@ struct WatchProvidersView: View {
                                     }
                                 }
                                 .frame(height: 60)
+                                .padding(.trailing)
                             }
                         }
                     }
                 }
+                .padding([.leading, .vertical])
+                .padding(.top, 40)
+                .background(.black.opacity(0.1))
+                .cornerRadius(16)
+                .overlay(alignment: .topLeading) {
+                    Text(country.flag)
+                        .scaleEffect(1.7)
+                        .padding(.horizontal, 8)
+                        .padding()
+                }
             }
-            .padding([.leading, .vertical])
-            .background(.black.opacity(0.1))
-            .cornerRadius(16)
         }
     }
 }
