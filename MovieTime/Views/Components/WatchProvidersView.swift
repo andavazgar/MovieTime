@@ -22,7 +22,7 @@ struct WatchProvidersView: View {
                                         .frame(minWidth: 60, alignment: .leading)
                                     
                                     ForEach(providers) { provider in
-                                        AsyncImage(url: TMDBImage.imageURL(for: provider.logoPath, ofType: .logo)) { image in
+                                        AsyncImage(url: TMDBEndpoint(path: provider.logoPath).imageURL(ofType: .logo)) { image in
                                             image
                                                 .resizable()
                                                 .scaledToFit()
@@ -58,6 +58,7 @@ struct WatchProvidersView_Previews: PreviewProvider {
     static let movie = NetworkingManagerMock.getMovie(withId: 0, including: [])!
     
     static var previews: some View {
-        WatchProvidersView(watchOptions: movie.watchOptions ?? [])
+        EmptyView()
+//        WatchProvidersView(watchOptions: movie.watchOptions ?? [])
     }
 }

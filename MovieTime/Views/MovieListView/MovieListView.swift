@@ -8,21 +8,27 @@
 import SwiftUI
 
 struct MovieListView: View {
-    @State private var movies = [Movie]()
+    @ObservedObject var vm = MovieListViewModel()
     
     var body: some View {
         NavigationStack {
             ScrollView(.horizontal, showsIndicators: false){
                 HStack {
-                    ForEach(movies) { movie in
-                        MovieListRow(movie: movie)
+                    ForEach(vm.movies) { movie in
+                        NavigationLink {
+                            MovieDetailsView(movieID: movie.id)
+                        } label: {
+                            MovieListRow(movie: movie)
+                        }
+                        .buttonStyle(.plain)
+
                     }
                 }
                 .padding()
             }
         }
-        .onAppear {
-            movies = NetworkingManagerMock.getTrendingMovies()
+        .task {
+            await vm.getTrendingMovies()
         }
     }
 }

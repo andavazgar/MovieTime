@@ -8,12 +8,11 @@
 import Foundation
 
 final class NetworkingManagerMock {
-    private static let tmdbDecoder = {
-        let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
-        decoder.dateDecodingStrategyFormatters = [.yearMonthDay]
-        return decoder
-    }()
+    static let shared = NetworkingManagerMock()
+    private static let tmdbDecoder = NetworkingManager.tmdbDecoder
+    private var cache = [URL: Data]()
+    
+    private init() {}
     
     private static func getJSONData(for fileName: String) -> Data? {
         guard let filePath = Bundle.main.path(forResource: fileName, ofType: "json"),
@@ -26,14 +25,14 @@ final class NetworkingManagerMock {
         return data
     }
     
-    static func getTrendingMovies() -> [Movie] {
+    func getTrendingMovies() -> [PartialMovie] {
         let fileName = "TrendingMovies"
-        guard let data = getJSONData(for: fileName) else {
+        guard let data = Self.getJSONData(for: fileName) else {
             return []
         }
         
         do {
-            let movies = try tmdbDecoder.decode(MoviesResponse.self, from: data)
+            let movies = try Self.tmdbDecoder.decode(PartialMoviesResponse.self, from: data)
             return movies.results
         } catch {
             dump(error)
@@ -41,14 +40,14 @@ final class NetworkingManagerMock {
         }
     }
     
-    static func getMovie(withId id: Int, including appendedResponse: [AppendToResponse]? = nil) -> Movie? {
+    static func getMovie(withId id: Int, including appendedResponse: [TMDBEndpoint.AppendToResponse]? = nil) -> DetailedMovie? {
         let fileName = appendedResponse == nil ? "Movie" : "MovieWithAppendedResponse"
         guard let data = getJSONData(for: fileName) else {
             return nil
         }
         
         do {
-            return try tmdbDecoder.decode(Movie.self, from: data)
+            return try tmdbDecoder.decode(DetailedMovie.self, from: data)
         } catch {
             dump(error)
             return nil

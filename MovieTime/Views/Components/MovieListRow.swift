@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MovieListRow: View {
-    let movie: Movie
+    let movie: any Movie
     private let cornerRadius = 25.0
     
     var body: some View {
@@ -29,7 +29,7 @@ struct MovieListRow: View {
     }
     
     private var posterImage: some View {
-            AsyncImage(url: URL(string: movie.fullPosterPath)) { image in
+        AsyncImage(url: TMDBEndpoint(path: movie.posterPath).imageURL(ofType: .poster)) { image in
                 image.resizable()
             } placeholder: {
                 Rectangle()
@@ -66,7 +66,7 @@ struct MovieListRow: View {
 }
 
 struct MovieListRow_Previews: PreviewProvider {
-    static let movies = NetworkingManagerMock.getTrendingMovies()
+    static let movies = NetworkingManagerMock.shared.getTrendingMovies()
     
     static var previews: some View {
         MovieListRow(movie: movies[0])

@@ -1,5 +1,5 @@
 //
-//  MovieDetails.swift
+//  MovieDetailsView.swift
 //  MovieTime
 //
 //  Created by Andres Vazquez on 2023-02-09.
@@ -7,14 +7,10 @@
 
 import SwiftUI
 
-struct MovieDetails: View {
-    let movie: Movie
-    
+struct MovieDetailsView: View {
+    let movieID: Int
+    @ObservedObject var vm = MovieDetailsViewModel()
     @State private var showVideo: Video?
-    
-    init(for movie: Movie) {
-        self.movie = movie
-    }
     
     var body: some View {
         ScrollView {
@@ -31,17 +27,28 @@ struct MovieDetails: View {
                 .padding()
             }
         }
+        .ignoresSafeArea(edges: .top)
+        .task {
+            await vm.getMovieDetails(for: movieID)
+        }
     }
     
     // MARK: - Subviews
     
     private var backdrop: some View {
-        Rectangle()
-            .frame(height: 200)
+        AsyncImage(url: vm.backdropImageURL) { image in
+            image
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+        } placeholder: {
+            placeholderImage
+        }
+        .frame(maxWidth: .infinity, minHeight: 200)
+        .background(placeholderImageColor)
     }
     
     private var movieTitle: some View {
-        Text(movie.title)
+        Text(vm.movie?.title ?? "")
             .font(.title.bold())
             .scaledToFit()
             .minimumScaleFactor(0.8)
@@ -49,9 +56,9 @@ struct MovieDetails: View {
     
     private var generalInfo: some View {
         HStack(spacing: 10) {
-            Text(String(movie.releaseDate.component(.year)))
-            Text(movie.contentRating)
-            Text(movie.formattedRuntime)
+            Text(vm.movie?.releaseYear ?? "")
+            Text(vm.contentRating)
+            Text(vm.formattedRuntime)
         }
         .foregroundColor(.secondary)
         .padding(.bottom, 16)
@@ -59,20 +66,25 @@ struct MovieDetails: View {
     }
     
     private var posterAndOverview: some View {
-        HStack(spacing: 16) {
-            Rectangle()
-                .aspectRatio(2/3, contentMode: .fit)
+        HStack(alignment: .top, spacing: 16) {
+            AsyncImage(url: vm.posterImageURL) { image in
+                image.resizable()
+            } placeholder: {
+                placeholderImage
+            }
+            .frame(maxWidth: .infinity, maxHeight: 225)
+            .aspectRatio(2/3, contentMode: .fit)
+            .background(placeholderImageColor)
             
-            Text(movie.overview)
+            Text(vm.movie?.overview ?? "")
                 .lineLimit(10)
                 .padding(.trailing)
         }
-        .frame(height: 225)
     }
     
     @ViewBuilder
     private var whereToWatch: some View {
-        if let watchOptions = movie.watchOptions {
+        if let watchOptions = vm.watchOptions {
             let sectionTitle = "Where To Watch"
             
             if watchOptions.count > 1 {
@@ -96,7 +108,7 @@ struct MovieDetails: View {
     
     @ViewBuilder
     private var videos: some View {
-        if let videos = movie.mainVideos {
+        if let videos = vm.mainVideos {
             Section {
                 sectionHeader("Videos")
                 
@@ -119,6 +131,15 @@ struct MovieDetails: View {
         }
     }
     
+    private var placeholderImage: some View {
+        Image(systemName: "photo")
+            .renderingMode(.template)
+            .foregroundColor(.black.opacity(0.7))
+            .scaleEffect(1.5)
+    }
+    
+    private let placeholderImageColor = Color.black.opacity(0.2)
+    
     private func sectionHeader(_ title: String) -> some View {
         Text(title)
             .font(.title2)
@@ -130,6 +151,6 @@ struct MovieDetails_Previews: PreviewProvider {
     static let movie = NetworkingManagerMock.getMovie(withId: 0, including: [.streamingProviders])!
     
     static var previews: some View {
-        MovieDetails(for: movie)
+        MovieDetailsView(movieID: movie.id)
     }
 }

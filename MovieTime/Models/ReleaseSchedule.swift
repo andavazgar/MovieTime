@@ -18,7 +18,7 @@ struct ReleaseSchedule: Codable {
     
     struct Release: Codable {
         let certification: String
-        let note: String
+        let note: String?
         let releaseDate: String
         let type: Int
     }
