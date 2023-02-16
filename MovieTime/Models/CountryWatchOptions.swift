@@ -22,3 +22,16 @@ struct CountryWatchOptions {
         }
     }
 }
+
+
+// MARK: - Extensions
+extension Array<CountryWatchOptions> {
+    func ordered(by order: [String]) -> [CountryWatchOptions] {
+        return self.sorted { (a, b) -> Bool in
+            if let first = order.firstIndex(of: a.name), let second = order.firstIndex(of: b.name) {
+                return first < second
+            }
+            return a.name < b.name  // The rest is sorted alphabetically by country name
+        }
+    }
+}

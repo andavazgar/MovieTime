@@ -9,12 +9,12 @@ import Foundation
 
 final class NetworkingManagerMock {
     static let shared = NetworkingManagerMock()
-    private static let tmdbDecoder = NetworkingManager.tmdbDecoder
+    private let tmdbDecoder = NetworkingManager.shared.tmdbDecoder
     private var cache = [URL: Data]()
     
     private init() {}
     
-    private static func getJSONData(for fileName: String) -> Data? {
+    private func getJSONData(for fileName: String) -> Data? {
         guard let filePath = Bundle.main.path(forResource: fileName, ofType: "json"),
               let data = FileManager.default.contents(atPath: filePath)
         else {
@@ -27,12 +27,12 @@ final class NetworkingManagerMock {
     
     func getTrendingMovies() -> [PartialMovie] {
         let fileName = "TrendingMovies"
-        guard let data = Self.getJSONData(for: fileName) else {
+        guard let data = getJSONData(for: fileName) else {
             return []
         }
         
         do {
-            let movies = try Self.tmdbDecoder.decode(PartialMoviesResponse.self, from: data)
+            let movies = try tmdbDecoder.decode(PartialMoviesResponse.self, from: data)
             return movies.results
         } catch {
             dump(error)
@@ -40,7 +40,7 @@ final class NetworkingManagerMock {
         }
     }
     
-    static func getMovie(withId id: Int, including appendedResponse: [TMDBEndpoint.AppendToResponse]? = nil) -> DetailedMovie? {
+    func getMovie(withId id: Int, including appendedResponse: [TMDBEndpoint.AppendToResponse]? = nil) -> DetailedMovie? {
         let fileName = appendedResponse == nil ? "Movie" : "MovieWithAppendedResponse"
         guard let data = getJSONData(for: fileName) else {
             return nil

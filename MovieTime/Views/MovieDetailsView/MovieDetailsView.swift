@@ -9,7 +9,8 @@ import SwiftUI
 
 struct MovieDetailsView: View {
     let movieID: Int
-    @ObservedObject var vm = MovieDetailsViewModel()
+    @StateObject private var vm = MovieDetailsViewModel()
+    @State private var collapseOverview = true
     @State private var showVideo: Video?
     
     var body: some View {
@@ -29,7 +30,9 @@ struct MovieDetailsView: View {
         }
         .ignoresSafeArea(edges: .top)
         .task {
-            await vm.getMovieDetails(for: movieID)
+            if vm.movie == nil {
+                await vm.getMovieDetails(for: movieID)                
+            }
         }
     }
     
@@ -72,13 +75,19 @@ struct MovieDetailsView: View {
             } placeholder: {
                 placeholderImage
             }
-            .frame(maxWidth: .infinity, maxHeight: 225)
-            .aspectRatio(2/3, contentMode: .fit)
+            .frame(width: 2/3 * 225, height: 225)
             .background(placeholderImageColor)
+            .cornerRadius(8)
             
             Text(vm.movie?.overview ?? "")
-                .lineLimit(10)
+                .lineLimit(collapseOverview ? 10 : nil)
                 .padding(.trailing)
+                .transition(.move(edge: .bottom))
+                .onTapGesture {
+                    withAnimation {
+                        collapseOverview.toggle()
+                    }
+                }
         }
     }
     
@@ -148,7 +157,7 @@ struct MovieDetailsView: View {
 }
 
 struct MovieDetails_Previews: PreviewProvider {
-    static let movie = NetworkingManagerMock.getMovie(withId: 0, including: [.streamingProviders])!
+    static let movie = NetworkingManagerMock.shared.getMovie(withId: 0, including: [.streamingProviders])!
     
     static var previews: some View {
         MovieDetailsView(movieID: movie.id)

@@ -20,7 +20,7 @@ struct MovieListRow: View {
             
             movieInfo
         }
-        .frame(width: 200)
+        .frame(width: 180)
         .background(
             RoundedRectangle(cornerRadius: cornerRadius)
                 .fill(.gray.opacity(0.1))

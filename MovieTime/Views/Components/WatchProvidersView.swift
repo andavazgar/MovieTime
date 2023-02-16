@@ -42,7 +42,7 @@ struct WatchProvidersView: View {
                 .padding([.leading, .vertical])
                 .padding(.top, 40)
                 .background(.black.opacity(0.1))
-                .cornerRadius(16)
+                .cornerRadius(8)
                 .overlay(alignment: .topLeading) {
                     Text(country.flag)
                         .scaleEffect(1.7)
@@ -55,10 +55,9 @@ struct WatchProvidersView: View {
 }
 
 struct WatchProvidersView_Previews: PreviewProvider {
-    static let movie = NetworkingManagerMock.getMovie(withId: 0, including: [])!
+    static let movie = NetworkingManagerMock.shared.getMovie(withId: 0, including: [.streamingProviders])!
     
     static var previews: some View {
-        EmptyView()
-//        WatchProvidersView(watchOptions: movie.watchOptions ?? [])
+        MovieDetailsView(movieID: movie.id)
     }
 }

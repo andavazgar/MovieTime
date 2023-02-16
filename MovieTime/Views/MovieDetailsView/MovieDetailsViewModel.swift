@@ -50,20 +50,17 @@ final class MovieDetailsViewModel: ObservableObject {
         return movie?.watchProviders?.results
             .filter { countries.contains($0.key) }
             .map { CountryWatchOptions(name: $0.key, watchOptions: $0.value) }
+            .ordered(by: countries)
     }
     
     var mainVideos: [Video]? {
         return movie?.videos?.results.filtered(by: [.Trailer, .Teaser]).sortedByPriority()
     }
     
-    
+    @MainActor
     func getMovieDetails(for movieID: Int) async {
         do {
-            let movie = try await NetworkingManager.shared.getMovie(withId: movieID, including: [.releaseDates, .streamingProviders, .videos])
-            
-            DispatchQueue.main.async {
-                self.movie = movie
-            }
+            self.movie = try await NetworkingManager.shared.getMovie(withId: movieID, including: [.releaseDates, .streamingProviders, .videos])
         } catch {
             print(error)
         }

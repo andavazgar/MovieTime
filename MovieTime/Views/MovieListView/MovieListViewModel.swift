@@ -10,13 +10,10 @@ import Foundation
 final class MovieListViewModel: ObservableObject {
     @Published private(set) var movies = [PartialMovie]()
     
+    @MainActor
     func getTrendingMovies() async {
         do {
-            let movies = try await NetworkingManager.shared.getTrendingMovies()
-            
-            DispatchQueue.main.async {
-                self.movies = movies
-            }
+            self.movies = try await NetworkingManager.shared.getTrendingMovies()
         } catch {
             print(error)
         }

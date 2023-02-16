@@ -7,9 +7,9 @@
 
 import Foundation
 
-class NetworkingManager {
+final class NetworkingManager {
     static let shared = NetworkingManager()
-    static let tmdbDecoder = {
+    let tmdbDecoder = {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         decoder.dateDecodingStrategyFormatters = [.yearMonthDay]
@@ -37,7 +37,7 @@ class NetworkingManager {
         let url = TMDBEndpoint.getTrendingMovies.url
         let data = try await fetchData(with: url)
         
-        let movies = try Self.tmdbDecoder.decode(PartialMoviesResponse.self, from: data)
+        let movies = try tmdbDecoder.decode(PartialMoviesResponse.self, from: data)
         return movies.results
     }
     
@@ -45,7 +45,7 @@ class NetworkingManager {
         let url = TMDBEndpoint.getMovie(withId: id, including: appendedResponse).url
         let data = try await fetchData(with: url)
         
-        return try Self.tmdbDecoder.decode(DetailedMovie.self, from: data)
+        return try tmdbDecoder.decode(DetailedMovie.self, from: data)
     }
 }
 
