@@ -8,18 +8,24 @@
 import Foundation
 
 struct CountryWatchOptions {
-    let name: String
+    let countryCode: String
     let watchOptions: WatchOptions
     
+    var name: String {
+        Locale.current.localizedString(forRegionCode: countryCode) ?? ""
+    }
+    
     var flag: String {
-        switch name {
-        case "CA":
-            return "🇨🇦"
-        case "US":
-            return "🇺🇸"
-        default:
-            return name
+        /* The base is calculated as such:
+         let regionalA = "🇦".unicodeScalars
+         let letterA = "A".unicodeScalars
+         let base = regionalA[regionalA.startIndex].value - letterA[letterA.startIndex].value */
+        let base: UInt32 = 127397
+        var flag = ""
+        for unicodeScalar in countryCode.unicodeScalars {
+            flag.unicodeScalars.append(UnicodeScalar(base + unicodeScalar.value)!)
         }
+        return flag
     }
 }
 
@@ -28,7 +34,7 @@ struct CountryWatchOptions {
 extension Array<CountryWatchOptions> {
     func ordered(by order: [String]) -> [CountryWatchOptions] {
         return self.sorted { (a, b) -> Bool in
-            if let first = order.firstIndex(of: a.name), let second = order.firstIndex(of: b.name) {
+            if let first = order.firstIndex(of: a.countryCode), let second = order.firstIndex(of: b.countryCode) {
                 return first < second
             }
             return a.name < b.name  // The rest is sorted alphabetically by country name

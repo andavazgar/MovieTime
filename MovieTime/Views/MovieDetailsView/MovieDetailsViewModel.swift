@@ -49,7 +49,7 @@ final class MovieDetailsViewModel: ObservableObject {
         let countries = ["CA", "US"]
         return movie?.watchProviders?.results
             .filter { countries.contains($0.key) }
-            .map { CountryWatchOptions(name: $0.key, watchOptions: $0.value) }
+            .map { CountryWatchOptions(countryCode: $0.key, watchOptions: $0.value) }
             .ordered(by: countries)
     }
     

@@ -12,7 +12,7 @@ struct WatchProvidersView: View {
     
     var body: some View {
         VStack {
-            ForEach(watchOptions, id: \.name) { country in
+            ForEach(watchOptions, id: \.countryCode) { country in
                 ScrollView(.horizontal, showsIndicators: false) {
                     VStack(alignment: .leading) {
                         ForEach(WatchOptionTypes.allCases, id: \.self) { watchOption in
@@ -44,10 +44,16 @@ struct WatchProvidersView: View {
                 .background(.black.opacity(0.1))
                 .cornerRadius(8)
                 .overlay(alignment: .topLeading) {
-                    Text(country.flag)
-                        .scaleEffect(1.7)
-                        .padding(.horizontal, 8)
-                        .padding()
+                    HStack(spacing: 2) {
+                        Text(country.flag)
+                            .font(.largeTitle)
+                        
+                        Text(country.name)
+                            .font(.headline.weight(.regular))
+                    }
+                    .padding(.top, 8)
+                    .padding(.leading)
+                    .offset(x: -2)
                 }
             }
         }
