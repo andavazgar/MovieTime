@@ -11,7 +11,19 @@ import SwiftUI
 struct MovieTimeApp: App {
     var body: some Scene {
         WindowGroup {
-            MovieListView()
+            TabView {
+                HomeView()
+                    .tabItem {
+                        Image(systemName: "house")
+                        Text("Home")
+                    }
+                
+                EmptyView()
+                    .tabItem {
+                        Image(systemName: "bookmark.fill")
+                        Text("Watchlist")
+                    }
+            }
         }
     }
 }

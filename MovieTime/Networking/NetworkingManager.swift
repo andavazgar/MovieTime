@@ -37,8 +37,8 @@ final class NetworkingManager {
         let url = TMDBEndpoint.getTrendingMovies.url
         let data = try await fetchData(with: url)
         
-        let movies = try tmdbDecoder.decode(PartialMoviesResponse.self, from: data)
-        return movies.results
+        let response = try tmdbDecoder.decode(PartialMoviesResponse.self, from: data)
+        return response.results
     }
     
     func getMovie(withId id: Int, including appendedResponse: [TMDBEndpoint.AppendToResponse] = []) async throws -> DetailedMovie {
@@ -46,6 +46,14 @@ final class NetworkingManager {
         let data = try await fetchData(with: url)
         
         return try tmdbDecoder.decode(DetailedMovie.self, from: data)
+    }
+    
+    func searchMovies(with searchTerm: String) async throws -> [PartialMovie] {
+        let url = TMDBEndpoint.searchMovies(with: searchTerm).url
+        let data = try await fetchData(with: url)
+        
+        let response = try tmdbDecoder.decode(PartialMoviesResponse.self, from: data)
+        return response.results
     }
 }
 

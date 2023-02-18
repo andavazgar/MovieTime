@@ -30,16 +30,6 @@ final class MovieDetailsViewModel: ObservableObject {
         return theatricalRelease.certification
     }
     
-    var backdropImageURL: URL? {
-        guard let backdropPath = movie?.backdropPath else { return nil }
-        return TMDBEndpoint(path: backdropPath).imageURL(ofType: .backdrop)
-    }
-    
-    var posterImageURL: URL? {
-        guard let posterPath = movie?.posterPath else { return nil }
-        return TMDBEndpoint(path: posterPath).imageURL(ofType: .poster)
-    }
-    
     var watchOptions: [CountryWatchOptions]? {
         guard let watchOptions = movie?.watchProviders?.results,
               !watchOptions.isEmpty else {

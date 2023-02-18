@@ -17,6 +17,6 @@ struct PartialMovie: Movie {
     var voteAverage: Double
     var voteCount: Int
     var adult: Bool
-    var posterPath: String
-    var backdropPath: String
+    var posterPath: String?
+    var backdropPath: String?
 }

@@ -39,15 +39,13 @@ struct MovieDetailsView: View {
     // MARK: - Subviews
     
     private var backdrop: some View {
-        AsyncImage(url: vm.backdropImageURL) { image in
+        AsyncImage(url: vm.movie?.backdropImageURL) { image in
             image
                 .resizable()
-                .aspectRatio(contentMode: .fit)
+                .scaledToFit()
         } placeholder: {
-            placeholderImage
+            PlaceholderImageView(height: 200)
         }
-        .frame(maxWidth: .infinity, minHeight: 200)
-        .background(placeholderImageColor)
     }
     
     private var movieTitle: some View {
@@ -68,15 +66,19 @@ struct MovieDetailsView: View {
         .offset(y: -6)
     }
     
+    @ViewBuilder
     private var posterAndOverview: some View {
+        let posterSize = CGSize(width: 2/3 * 225.0, height: 225.0)
+        
         HStack(alignment: .top, spacing: 16) {
-            AsyncImage(url: vm.posterImageURL) { image in
-                image.resizable()
+            AsyncImage(url: vm.movie?.posterImageURL) { image in
+                image
+                    .resizable()
+                    .scaledToFit()
             } placeholder: {
-                placeholderImage
+                PlaceholderImageView(width: posterSize.width, height: posterSize.height)
             }
-            .frame(width: 2/3 * 225, height: 225)
-            .background(placeholderImageColor)
+            .frame(width: posterSize.width, height: posterSize.height)
             .cornerRadius(8)
             
             Text(vm.movie?.overview ?? "")
@@ -139,15 +141,6 @@ struct MovieDetailsView: View {
             }
         }
     }
-    
-    private var placeholderImage: some View {
-        Image(systemName: "photo")
-            .renderingMode(.template)
-            .foregroundColor(.black.opacity(0.7))
-            .scaleEffect(1.5)
-    }
-    
-    private let placeholderImageColor = Color.black.opacity(0.2)
     
     private func sectionHeader(_ title: String) -> some View {
         Text(title)

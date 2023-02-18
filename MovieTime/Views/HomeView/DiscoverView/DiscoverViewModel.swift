@@ -1,5 +1,5 @@
 //
-//  MovieListViewModel.swift
+//  DiscoverViewModel.swift
 //  MovieTime
 //
 //  Created by Andres Vazquez on 2023-02-14.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class MovieListViewModel: ObservableObject {
+final class DiscoverViewModel: ObservableObject {
     @Published private(set) var movies = [PartialMovie]()
     
     @MainActor

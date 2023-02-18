@@ -52,6 +52,13 @@ extension TMDBEndpoint {
         TMDBEndpoint(path: "movie/\(id)", queryItems: appendedResponse.queryItems)
     }
     
+    static func searchMovies(with searchTerm: String) -> Self {
+        TMDBEndpoint(path: "search/movie", queryItems: [
+            URLQueryItem(name: "query", value: searchTerm),
+            URLQueryItem(name: "include_adult", value: "false")
+        ])
+    }
+    
     
     // MARK: - AppendToResponse
     enum AppendToResponse: String {

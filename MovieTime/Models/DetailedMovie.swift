@@ -22,8 +22,8 @@ struct DetailedMovie: Movie {
     let watchProviders: AppendedResults<[String: WatchOptions]>?
     let videos: AppendedResults<[Video]>?
     let adult: Bool
-    let posterPath: String
-    let backdropPath: String
+    let posterPath: String?
+    let backdropPath: String?
 }
 
 

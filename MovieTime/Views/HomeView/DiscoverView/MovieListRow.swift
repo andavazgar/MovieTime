@@ -14,9 +14,9 @@ struct MovieListRow: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             posterImage
-            .overlay(alignment: .bottomTrailing) {
-                rating
-            }
+                .overlay(alignment: .bottomTrailing) {
+                    rating
+                }
             
             movieInfo
         }
@@ -29,27 +29,21 @@ struct MovieListRow: View {
     }
     
     private var posterImage: some View {
-        AsyncImage(url: TMDBEndpoint(path: movie.posterPath).imageURL(ofType: .poster)) { image in
-                image.resizable()
+        AsyncImage(url: movie.posterImageURL) { image in
+                image
+                    .resizable()
+                    .scaledToFit()
             } placeholder: {
-                Rectangle()
-                    .foregroundColor(.gray)
+                PlaceholderImageView(aspectRatio: 2/3)
             }
             .cornerRadius(cornerRadius)
-            .aspectRatio(2/3, contentMode: .fit)
     }
     
     private var rating: some View {
-        ZStack {
-            Circle()
-                .foregroundColor(.black.opacity(0.7))
-                .frame(width: 50)
-            
-            Text(movie.rating)
-                .foregroundColor(Color(uiColor: UIColor.systemBackground))
-                .shadow(color: .primary, radius: 1, x: 1, y: 1)
-        }
-        .offset(x: -7, y: -7)
+        RatingsView(value: movie.rating)
+            .background(Circle().fill(.black))
+            .foregroundColor(.white)
+            .offset(x: -7, y: -7)
     }
     
     private var movieInfo: some View {
