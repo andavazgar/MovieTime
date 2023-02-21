@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol Movie: Identifiable, Codable {
+protocol Movie: Identifiable {
     var id: Int { get }
     var title: String  { get }
     var originalTitle: String  { get }

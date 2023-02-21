@@ -18,10 +18,13 @@ struct MovieDetailsView: View {
             VStack(alignment: .leading) {
                 backdrop
                 
-                VStack(alignment: .leading, spacing: 8) {
+                VStack(alignment: .leading, spacing: 16) {
                     movieTitle
                     generalInfo
                     posterAndOverview
+                    
+                    watchlistButton
+                    
                     whereToWatch
                     videos
                 }
@@ -62,8 +65,8 @@ struct MovieDetailsView: View {
             Text(vm.formattedRuntime)
         }
         .foregroundColor(.secondary)
-        .padding(.bottom, 16)
-        .offset(y: -6)
+        .padding(.bottom, -4)
+        .offset(y: -12)
     }
     
     @ViewBuilder
@@ -90,6 +93,13 @@ struct MovieDetailsView: View {
                         collapseOverview.toggle()
                     }
                 }
+        }
+    }
+    
+    @ViewBuilder
+    private var watchlistButton: some View {
+        if let movie = vm.movie {
+            WatchlistButtonView(movie: movie, showAsIcon: false)
         }
     }
     
@@ -145,7 +155,6 @@ struct MovieDetailsView: View {
     private func sectionHeader(_ title: String) -> some View {
         Text(title)
             .font(.title2)
-            .padding(.top)
     }
 }
 

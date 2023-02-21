@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PartialMovie: Movie {
+struct PartialMovie: Movie, Codable {
     var id: Int
     var title: String
     var originalTitle: String

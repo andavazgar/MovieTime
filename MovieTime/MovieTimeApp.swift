@@ -14,16 +14,15 @@ struct MovieTimeApp: App {
             TabView {
                 HomeView()
                     .tabItem {
-                        Image(systemName: "house")
-                        Text("Home")
+                        Label("Home", systemImage: "house")
                     }
                 
-                EmptyView()
+                WatchlistView()
                     .tabItem {
-                        Image(systemName: "bookmark.fill")
-                        Text("Watchlist")
+                        Label("Watchlist", systemImage: "bookmark.fill")
                     }
             }
+            .environment(\.managedObjectContext, MovieTimeProvider.shared.viewContext)
         }
     }
 }

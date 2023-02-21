@@ -13,10 +13,8 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             List(vm.movies) { movie in
-                NavigationLink(
-                    destination: { MovieDetailsView(movieID: movie.id) },
-                    label: { MovieSearchResultView(movie: movie) }
-                )
+                MovieSearchResultView(movie: movie)
+                    .background(NavigationLink("", destination: { MovieDetailsView(movieID: movie.id) }).opacity(0))
             }
             .listStyle(.grouped)
             .navigationTitle("Home")

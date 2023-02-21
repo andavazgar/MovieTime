@@ -39,7 +39,7 @@ struct DiscoverView: View {
                             MovieListRow(movie: movie)
                         }
                         .buttonStyle(.plain)
-
+                        .frame(width: 180)
                     }
                 }
             }
