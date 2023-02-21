@@ -11,4 +11,5 @@ enum TMDBImageTypes: String {
     case backdrop = "w1280"
     case poster = "w500"
     case logo = "w154"
+    case profile = "w185"
 }

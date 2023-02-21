@@ -27,6 +27,7 @@ struct MovieDetailsView: View {
                     
                     whereToWatch
                     videos
+                    cast
                 }
                 .padding()
             }
@@ -83,6 +84,9 @@ struct MovieDetailsView: View {
             }
             .frame(width: posterSize.width, height: posterSize.height)
             .cornerRadius(8)
+            .overlay(alignment: .bottomTrailing) {
+                rating
+            }
             
             Text(vm.movie?.overview ?? "")
                 .lineLimit(collapseOverview ? 10 : nil)
@@ -100,6 +104,16 @@ struct MovieDetailsView: View {
     private var watchlistButton: some View {
         if let movie = vm.movie {
             WatchlistButtonView(movie: movie, showAsIcon: false)
+        }
+    }
+    
+    @ViewBuilder
+    private var rating: some View {
+        if let rating = vm.movie?.rating, rating > 0 {
+            RatingsView(value: rating)
+                .background(.regularMaterial, in: Circle())
+                .environment(\.colorScheme, .dark)
+                .scaleEffect(0.8)
         }
     }
     
@@ -148,6 +162,41 @@ struct MovieDetailsView: View {
                         SafariBrowserView(url: videoURL)
                     }
                 })
+            }
+        }
+    }
+    
+    private var cast: some View {
+        Section {
+            sectionHeader("Cast")
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                LazyHStack(alignment: .top) {
+                    ForEach(vm.movieCast) { cast in
+                        if let imageURL = vm.castImageURL(from: cast.profilePath) {
+                            VStack(alignment: .leading) {
+                                AsyncImage(url: imageURL) { image in
+                                    image.resizable().scaledToFit()
+                                } placeholder: {
+                                    PlaceholderImageView()
+                                }
+                                .frame(height: 175)
+                                .cornerRadius(8)
+                                
+                                Text(cast.character)
+                                    .foregroundColor(.secondary)
+                                    .italic()
+                                    .lineLimit(3)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                
+                                Text(cast.name)
+                                    .lineLimit(3, reservesSpace: true)
+                                    .fixedSize(horizontal: false, vertical: true)
+                            }
+                            .frame(width: 2/3 * 175)
+                        }
+                    }
+                }
             }
         }
     }

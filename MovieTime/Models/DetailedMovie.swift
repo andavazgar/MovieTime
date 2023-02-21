@@ -24,6 +24,7 @@ struct DetailedMovie: Movie, Codable {
     let adult: Bool
     let posterPath: String?
     let backdropPath: String?
+    let credits: Credits
 }
 
 
@@ -47,6 +48,7 @@ extension DetailedMovie {
         case adult
         case posterPath
         case backdropPath
+        case credits
     }
 }
 

@@ -15,7 +15,9 @@ struct DiscoverView: View {
         NavigationStack {
             ScrollView {
                 VStack {
-                    trendingMovies
+                    list(of: vm.trendingMovies, withTitle: "Trending")
+                    list(of: vm.nowPlayingMovies, withTitle: "Now Playing")
+                    list(of: vm.upcomingMovies, withTitle: "Upcoming")
                 }
                 .padding()
             }
@@ -23,16 +25,18 @@ struct DiscoverView: View {
         .task {
             if !hasFetchedData {
                 await vm.getTrendingMovies()
+                await vm.getNowPlayingMovies()
+                await vm.getUpcomingMovies()
                 hasFetchedData = true
             }
         }
     }
     
-    private var trendingMovies: some View {
+    private func list(of movies: [PartialMovie], withTitle title: String) -> some View {
         Section {
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHStack {
-                    ForEach(vm.movies) { movie in
+                    ForEach(movies) { movie in
                         NavigationLink {
                             MovieDetailsView(movieID: movie.id)
                         } label: {
@@ -44,7 +48,7 @@ struct DiscoverView: View {
                 }
             }
         } header: {
-            Text("Trending")
+            Text(title)
                 .font(.title2.bold())
                 .frame(maxWidth: .infinity, alignment: .leading)
         }

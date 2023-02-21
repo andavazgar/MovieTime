@@ -26,6 +26,7 @@ struct VideoView: View {
             }
             .aspectRatio(aspectRatio, contentMode: .fit)
             .frame(height: height)
+            .cornerRadius(8)
             .overlay {
                 Image(systemName: "play.circle.fill")
                     .foregroundColor(.white.opacity(0.7))

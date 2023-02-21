@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		410F450629A1D45900E4788F /* WatchlistButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410F450529A1D45900E4788F /* WatchlistButtonView.swift */; };
 		410F450929A1F61A00E4788F /* WatchlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410F450829A1F61A00E4788F /* WatchlistView.swift */; };
+		4119FB8629A4745400AB318D /* Credits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4119FB8529A4745400AB318D /* Credits.swift */; };
 		4125DE3029A325360079DF86 /* MovieTimeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4125DE2F29A325360079DF86 /* MovieTimeProvider.swift */; };
 		4136D9C0299FD454007C2926 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4136D9BF299FD454007C2926 /* RatingsView.swift */; };
 		4138B2F129A31512001477C8 /* MovieTimeDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4138B2EF29A31512001477C8 /* MovieTimeDataModel.xcdatamodeld */; };
@@ -63,6 +64,7 @@
 /* Begin PBXFileReference section */
 		410F450529A1D45900E4788F /* WatchlistButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistButtonView.swift; sourceTree = "<group>"; };
 		410F450829A1F61A00E4788F /* WatchlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchlistView.swift; sourceTree = "<group>"; };
+		4119FB8529A4745400AB318D /* Credits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credits.swift; sourceTree = "<group>"; };
 		4125DE2F29A325360079DF86 /* MovieTimeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTimeProvider.swift; sourceTree = "<group>"; };
 		4136D9BF299FD454007C2926 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
 		4138B2F029A31512001477C8 /* MovieTimeDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieTimeDataModel.xcdatamodel; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 				41AAC65D2996D9F600912B2C /* StreamingProvider.swift */,
 				41EFF4FC29957FAC008BAC01 /* Video.swift */,
 				41AAC65B2996D9C500912B2C /* WatchOptions.swift */,
+				4119FB8529A4745400AB318D /* Credits.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				41FCF500299F324B0083B17C /* HomeView.swift in Sources */,
 				4136D9C0299FD454007C2926 /* RatingsView.swift in Sources */,
 				41F0A4902992C26E0094D6EB /* NetworkingManager.swift in Sources */,
+				4119FB8629A4745400AB318D /* Credits.swift in Sources */,
 				414320A02998494000352968 /* CountryWatchOptions.swift in Sources */,
 				41E133432991F7AB00E30B6E /* DiscoverView.swift in Sources */,
 				4141AAF4299C23D8000F0B44 /* DiscoverViewModel.swift in Sources */,

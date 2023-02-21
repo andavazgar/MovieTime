@@ -48,6 +48,18 @@ extension TMDBEndpoint {
         TMDBEndpoint(path: "trending/movie/day")
     }
     
+    static var getNowPlayingMovies: Self {
+        TMDBEndpoint(path: "/movie/now_playing", queryItems: [
+            URLQueryItem(name: "region", value: "US")
+        ])
+    }
+    
+    static var getUpcomingMovies: Self {
+        TMDBEndpoint(path: "/movie/upcoming", queryItems: [
+            URLQueryItem(name: "region", value: "US")
+        ])
+    }
+    
     static func getMovie(withId id: Int, including appendedResponse: [AppendToResponse] = []) -> Self {
         TMDBEndpoint(path: "movie/\(id)", queryItems: appendedResponse.queryItems)
     }
@@ -66,6 +78,7 @@ extension TMDBEndpoint {
         case releaseDates = "release_dates"
         case streamingProviders = "watch/providers"
         case videos
+        case credits
     }
 }
 

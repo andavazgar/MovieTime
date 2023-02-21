@@ -41,6 +41,22 @@ final class NetworkingManager {
         return response.results
     }
     
+    func getNowPlayingMovies() async throws -> [PartialMovie] {
+        let url = TMDBEndpoint.getNowPlayingMovies.url
+        let data = try await fetchData(with: url)
+        
+        let response = try tmdbDecoder.decode(PartialMoviesResponse.self, from: data)
+        return response.results
+    }
+    
+    func getUpcomingMovies() async throws -> [PartialMovie] {
+        let url = TMDBEndpoint.getUpcomingMovies.url
+        let data = try await fetchData(with: url)
+        
+        let response = try tmdbDecoder.decode(PartialMoviesResponse.self, from: data)
+        return response.results
+    }
+    
     func getMovie(withId id: Int, including appendedResponse: [TMDBEndpoint.AppendToResponse] = []) async throws -> DetailedMovie {
         let url = TMDBEndpoint.getMovie(withId: id, including: appendedResponse).url
         let data = try await fetchData(with: url)

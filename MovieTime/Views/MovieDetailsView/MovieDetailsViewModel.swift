@@ -47,10 +47,19 @@ final class MovieDetailsViewModel: ObservableObject {
         return movie?.videos?.results.filtered(by: [.Trailer, .Teaser]).sortedByPriority()
     }
     
+    var movieCast: [Credits.Cast] {
+        Array(movie?.credits.cast.prefix(30) ?? [])
+    }
+    
+    func castImageURL(from imagePath: String?) -> URL? {
+        guard let imagePath else { return nil }
+        return TMDBEndpoint(path: imagePath).imageURL(ofType: .profile)
+    }
+    
     @MainActor
     func getMovieDetails(for movieID: Int) async {
         do {
-            self.movie = try await NetworkingManager.shared.getMovie(withId: movieID, including: [.releaseDates, .streamingProviders, .videos])
+            movie = try await NetworkingManager.shared.getMovie(withId: movieID, including: [.releaseDates, .streamingProviders, .videos, .credits])
         } catch {
             print(error)
         }

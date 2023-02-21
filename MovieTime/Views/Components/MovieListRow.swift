@@ -19,7 +19,9 @@ struct MovieListRow<M: Movie>: View {
                     watchlistButton
                 }
                 .overlay(alignment: .bottomTrailing) {
-                    rating
+                    if movie.rating > 0 {
+                        rating                        
+                    }
                 }
             
             if showMovieInfo {
