@@ -36,11 +36,13 @@ final class MovieDetailsViewModel: ObservableObject {
             return nil
         }
         
-        let countries = ["CA", "US"]
+        let chosenCountries = UserDefaults.standard.getValue(valueOfType: [WatchProviderCountry].self, forKey: AppStorageKeys.chosenCountries)
+        let countriesToShow = chosenCountries?.map(\.countryCode)
+        
         return movie?.watchProviders?.results
-            .filter { countries.contains($0.key) }
+            .filter { countriesToShow?.contains($0.key) ?? false }
             .map { CountryWatchOptions(countryCode: $0.key, watchOptions: $0.value) }
-            .ordered(by: countries)
+            .ordered(by: countriesToShow)
     }
     
     var mainVideos: [Video]? {

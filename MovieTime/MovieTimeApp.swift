@@ -21,6 +21,11 @@ struct MovieTimeApp: App {
                     .tabItem {
                         Label("Watchlist", systemImage: "bookmark.fill")
                     }
+                
+                SettingsView()
+                    .tabItem {
+                        Label("Settings", systemImage: "gear")
+                    }
             }
             .environment(\.managedObjectContext, MovieTimeProvider.shared.viewContext)
         }

@@ -44,23 +44,27 @@ extension TMDBEndpoint {
         return url
     }
     
-    static var getTrendingMovies: Self {
+    static var trendingMovies: Self {
         TMDBEndpoint(path: "trending/movie/day")
     }
     
-    static var getNowPlayingMovies: Self {
+    static var nowPlayingMovies: Self {
         TMDBEndpoint(path: "/movie/now_playing", queryItems: [
             URLQueryItem(name: "region", value: "US")
         ])
     }
     
-    static var getUpcomingMovies: Self {
+    static var upcomingMovies: Self {
         TMDBEndpoint(path: "/movie/upcoming", queryItems: [
             URLQueryItem(name: "region", value: "US")
         ])
     }
     
-    static func getMovie(withId id: Int, including appendedResponse: [AppendToResponse] = []) -> Self {
+    static var watchProviderCountries: Self {
+        TMDBEndpoint(path: "/watch/providers/regions")
+    }
+    
+    static func detailedMovie(withId id: Int, including appendedResponse: [AppendToResponse] = []) -> Self {
         TMDBEndpoint(path: "movie/\(id)", queryItems: appendedResponse.queryItems)
     }
     

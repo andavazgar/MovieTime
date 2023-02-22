@@ -32,6 +32,10 @@ struct WatchlistView: View {
 
 struct WatchlistView_Previews: PreviewProvider {
     static var previews: some View {
+        let previewProvider = MovieTimeProvider.shared
         WatchlistView()
+            .environment(\.managedObjectContext, previewProvider.viewContext)
+            .previewDisplayName("Watchlist with Movies")
+            .onAppear { WatchlistMovie.makePreview(in: previewProvider.viewContext) }
     }
 }

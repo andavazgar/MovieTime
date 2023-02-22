@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreData
+import SwiftUI
 
 final class MovieTimeProvider {
     static let shared = MovieTimeProvider()
@@ -21,11 +22,23 @@ final class MovieTimeProvider {
     }
     
     private init() {
+        if EnvironmentValues.isPreview {
+            container.persistentStoreDescriptions.first?.url = URL(filePath: "/dev/null")
+        }
+        
         container.viewContext.automaticallyMergesChangesFromParent = true
         container.loadPersistentStores { _, error in
             if let error {
                 fatalError("Unable to load store with error: \(error)")
             }
         }
+    }
+}
+
+
+// MARK: - Extension for Preview
+extension EnvironmentValues {
+    static var isPreview: Bool {
+        ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PREVIEWS"] == "1"
     }
 }

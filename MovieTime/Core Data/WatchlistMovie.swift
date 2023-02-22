@@ -103,3 +103,22 @@ extension WatchlistMovie {
         }
     }
 }
+
+
+extension WatchlistMovie {
+    private static let trendingMovies = NetworkingManagerMock.shared.getTrendingMovies()
+    
+    @discardableResult
+    static func makePreview(count: Int = trendingMovies.count, in context: NSManagedObjectContext) -> [WatchlistMovie] {
+        var movies = [WatchlistMovie]()
+        
+        for i in 0..<min(trendingMovies.count, abs(count)) {
+            movies.append(WatchlistMovie(context: context, movie: trendingMovies[i]))
+        }
+        return movies
+    }
+    
+    static func preview(context: NSManagedObjectContext = MovieTimeProvider.shared.viewContext) -> WatchlistMovie {
+        makePreview(count: 1, in: context)[0]
+    }
+}
