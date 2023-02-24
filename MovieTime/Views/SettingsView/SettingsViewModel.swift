@@ -49,7 +49,7 @@ final class SettingsViewModel: ObservableObject {
     @MainActor
     func getWatchProviderCountries() async {
         do {
-            countries = try await NetworkingManager.shared.getWatchProviderCountries()
+            countries = try await NetworkingManager.shared.getWatchProviderCountries().sorted { $0.name < $1.name }
         } catch {
             print(error)
         }

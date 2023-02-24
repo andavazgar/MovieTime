@@ -13,7 +13,7 @@ struct DetailedMovie: Movie, Codable {
     let originalTitle: String
     let overview: String
     let originalLanguage: String
-    let releaseDate: Date
+    let releaseDate: Date?
     let voteAverage: Double
     let voteCount: Int
     let genres: [Genre]?
@@ -29,7 +29,6 @@ struct DetailedMovie: Movie, Codable {
 
 
 // MARK: - Extensions
-// MARK: - CodingKeys
 extension DetailedMovie {
     enum CodingKeys: String, CodingKey {
         case id
@@ -49,6 +48,28 @@ extension DetailedMovie {
         case posterPath
         case backdropPath
         case credits
+    }
+    
+    init(from decoder: Decoder) throws {
+        // try? for releaseDate because sometimes the string can be empty instead of having a date or being nil
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = try container.decode(Int.self, forKey: .id)
+        self.title = try container.decode(String.self, forKey: .title)
+        self.originalTitle = try container.decode(String.self, forKey: .originalTitle)
+        self.overview = try container.decode(String.self, forKey: .overview)
+        self.originalLanguage = try container.decode(String.self, forKey: .originalLanguage)
+        self.releaseDate = try? container.decodeIfPresent(Date.self, forKey: .releaseDate)
+        self.voteAverage = try container.decode(Double.self, forKey: .voteAverage)
+        self.voteCount = try container.decode(Int.self, forKey: .voteCount)
+        self.genres = try container.decodeIfPresent([DetailedMovie.Genre].self, forKey: .genres)
+        self.runtime = try container.decode(Int.self, forKey: .runtime)
+        self.releaseDates = try container.decodeIfPresent(AppendedResults<[ReleaseSchedule]>.self, forKey: .releaseDates)
+        self.watchProviders = try container.decodeIfPresent(AppendedResults<[String : WatchOptions]>.self, forKey: .watchProviders)
+        self.videos = try container.decodeIfPresent(AppendedResults<[Video]>.self, forKey: .videos)
+        self.adult = try container.decode(Bool.self, forKey: .adult)
+        self.posterPath = try container.decodeIfPresent(String.self, forKey: .posterPath)
+        self.backdropPath = try container.decodeIfPresent(String.self, forKey: .backdropPath)
+        self.credits = try container.decode(Credits.self, forKey: .credits)
     }
 }
 

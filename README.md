@@ -13,28 +13,41 @@ MovieTime is an app that uses [The Movie Database API (TMDB)](https://developers
 - Core Data
 	- Used to persist the Watchlist of movies
 	- Used `NSPredicate` and `NSSortDescriptor` to filter and sort the results
-- `UserDefaults` (for Settings storage)
+- UserDefaults (for Settings storage)
 	- Used to persists the countries to show in the "Where to Watch" section of the `MovieDetailsView` screen
 	- `JSONEncoder` and `JSONDecoder` were used to store the settings as `Data` objects
 - UIKit
 	- Used the `UIViewControllerRepresentable` protocol to manage a `SFSafariViewController` and present the trailer videos without leaving the app
 
 
+## Preview
+
+![App Preview](https://www.dropbox.com/s/anhcm8bgjzlv570/Preview.gif?dl=1)
+
+
 ## Screens
 
 ### HomeView
+![HomeView Screen](Images/HomeView.png)
+
 `HomeView` presents a search bar to find movies to add to the watchlist. While the search bar is empty, the `DiscoverView` is overlaid on top.
 
 #### DiscoverView
 `DiscoverView` is a screen that presents multiple lists of movies to help the user find movies to add to their Watchlist. At the moment, the list of movies shown are: _Trending_, _Now Playing_ and _Upcoming_.
 
 ### WatchlistView
+![WatchlistView Screen](Images/WatchlistView.png)
+
 `WatchlistView` presents a grid of movies that the user has added to their Watchlist. The movies are persisted using `Core Data`.
 
 ### MovieDetailsView
+![MovieDetailsView Screen](Images/MovieDetailsView.png)
+
 `MovieDetailsView` presents all the information related to a movie. It shows a cover and poster photos, overview of the movie, where to watch it, trailer and teaser videos as well as the cast (actors) that appear in it.
 
 ### SettingsView
+![SettingsView Screen](Images/SettingsView.png)
+
 `SettingsView` shows a list of all the countries for which there is where to watch information (Streaming services and/or stores). The user can select which countries they want to see in the "Where to Watch" section of the `MovieDetailsView` screen. Their list of selected countries is persisted in `UserDefaults`.
 
 

@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct HomeView: View {
-    @StateObject private var vm = HomeViewModel()
+    @StateObject private var vm: HomeViewModel
+    
+    init(vm: HomeViewModel = HomeViewModel()) {
+        self._vm = StateObject(wrappedValue: vm)
+    }
     
     var body: some View {
         NavigationStack {
@@ -22,6 +26,7 @@ struct HomeView: View {
             .overlay {
                 if vm.searchTerm.isEmpty {
                     DiscoverView()
+                        .background(Color(uiColor: UIColor.systemBackground))   // This prevents the background from being clear (transparent) and momentarily letting see the MovieSearchResultsView when the search is cancelled.
                 }
             }
         }
@@ -31,5 +36,9 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .previewDisplayName("DiscoverView")
+        
+        HomeView(vm: HomeViewModel(searchTerm: "Black Panther"))
+            .previewDisplayName("Search screen")
     }
 }

@@ -39,7 +39,7 @@ struct MovieListRow<M: Movie>: View {
         AsyncImage(url: movie.posterImageURL) { image in
                 image
                     .resizable()
-                    .scaledToFit()
+                    .aspectRatio(2/3, contentMode: .fit)
             } placeholder: {
                 PlaceholderImageView(aspectRatio: 2/3)
             }

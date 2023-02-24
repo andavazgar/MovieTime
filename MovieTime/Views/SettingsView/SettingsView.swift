@@ -19,7 +19,9 @@ struct SettingsView: View {
             .navigationTitle("Settings")
         }
         .task {
-            await vm.getWatchProviderCountries()
+            if vm.countries.isEmpty {
+                await vm.getWatchProviderCountries()
+            }
         }
     }
     
@@ -36,7 +38,7 @@ struct SettingsView: View {
         } header: {
             Text("Chosen Countries")
         } footer: {
-            Text("The chosen countries will be used to populate the \"Where to Watch\" section of movies.")
+            Text("The chosen countries will be used to populate the \"Where to Watch\" section of movies. They will appear in the order set above.")
         }
     }
     
@@ -49,6 +51,7 @@ struct SettingsView: View {
                     
                     if vm.chosenCountries.contains { $0 == country } {
                         Image(systemName: "checkmark")
+                            .foregroundStyle(.tint)
                     }
                 }
                 .onTapGesture {

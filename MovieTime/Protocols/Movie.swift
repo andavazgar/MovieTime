@@ -13,7 +13,7 @@ protocol Movie: Identifiable {
     var originalTitle: String  { get }
     var overview: String  { get }
     var originalLanguage: String  { get }
-    var releaseDate: Date  { get }
+    var releaseDate: Date?  { get }
     var voteAverage: Double  { get }
     var voteCount: Int  { get }
     var adult: Bool  { get }
@@ -32,11 +32,13 @@ protocol Movie: Identifiable {
 // MARK: - Extensions
 extension Movie {
     var releaseYear: String {
-        String(releaseDate.component(.year))
+        guard let releaseDate else { return "" }
+        return String(releaseDate.component(.year))
     }
     
     var formattedReleaseDate: String {
-        DateFormatter.monthDayYear.string(from: releaseDate)
+        guard let releaseDate else { return "" }
+        return DateFormatter.monthDayYear.string(from: releaseDate)
     }
     
     var rating: Double {

@@ -120,7 +120,7 @@ struct MovieDetailsView: View {
     @ViewBuilder
     private var whereToWatch: some View {
         if let watchOptions = vm.watchOptions, watchOptions.isEmpty == false {
-            let sectionTitle = "Where To Watch"
+            let sectionTitle = "Where to Watch"
             
             if watchOptions.count > 1 {
                 CollapsibleSection(isCollapsed: true) {

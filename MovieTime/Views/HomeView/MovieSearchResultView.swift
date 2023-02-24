@@ -24,12 +24,14 @@ struct MovieSearchResultView: View {
                 
                 Spacer()
                 
-                RatingsView(value: movie.rating)
-                    .scaleEffect(0.8)
+                if movie.rating > 0 {
+                    RatingsView(value: movie.rating)
+                        .scaleEffect(0.8)                    
+                }
             }
             .frame(maxWidth: .infinity, maxHeight: rowHeight, alignment: .leading)
             
-            WatchlistButtonView(movie: movie)
+            WatchlistButtonView(movie: movie, isInList: true)
         }
         .frame(maxWidth: .infinity, maxHeight: rowHeight, alignment: .leading)
     }

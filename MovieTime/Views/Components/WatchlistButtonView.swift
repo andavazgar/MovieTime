@@ -15,22 +15,31 @@ struct WatchlistButtonView<M: Movie>: View {
     
     let movie: M
     var showAsIcon: Bool
+    var isInList: Bool
     
-    init(movie: M, showAsIcon: Bool = true) {
+    init(movie: M, showAsIcon: Bool = true, isInList: Bool = false) {
         self._movieInWatchlist = FetchRequest(fetchRequest: WatchlistMovie.findMovie(withID: movie.id))
         self.movie = movie
         self.showAsIcon = showAsIcon
+        self.isInList = isInList
     }
     
     var body: some View {
         Button {
-            WatchlistMovie.toggleWatchlistStatus(for: movie)
+            if !isInList {
+                toggleWatchlistStatus()
+            }
         } label: {
             watchlistIconLabel
         }
         .conditionalButtonStyle(condition: showAsIcon, true: .automatic, false: .bordered)
         .tint(.yellow)
         .fontWeight(.bold)
+        .onTapGesture {
+            if isInList {
+                toggleWatchlistStatus()
+            }
+        }
     }
     
     @ViewBuilder
@@ -47,6 +56,10 @@ struct WatchlistButtonView<M: Movie>: View {
                 watchlistIcon
             }
         }
+    }
+    
+    private func toggleWatchlistStatus() {
+        WatchlistMovie.toggleWatchlistStatus(for: movie)
     }
 }
 

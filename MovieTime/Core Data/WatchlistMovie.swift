@@ -16,7 +16,7 @@ final class WatchlistMovie: NSManagedObject, Movie {
     @NSManaged var originalTitle: String
     @NSManaged var overview: String
     @NSManaged var originalLanguage: String
-    @NSManaged var releaseDate: Date
+    @NSManaged var releaseDate: Date?
     @NSManaged var voteAverage: Double
     @NSManaged var countOfVotes: Int64
     @NSManaged var adult: Bool

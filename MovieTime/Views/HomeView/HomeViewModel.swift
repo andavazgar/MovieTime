@@ -14,7 +14,7 @@ final class HomeViewModel: ObservableObject {
     
     private var subscriptions = Set<AnyCancellable>()
     
-    init() {
+    init(searchTerm: String? = nil) {
         $searchTerm
             .dropFirst()
             .debounce(for: .seconds(0.5), scheduler: RunLoop.main)
@@ -24,6 +24,11 @@ final class HomeViewModel: ObservableObject {
                 }
             }
             .store(in: &subscriptions)
+        
+        // Used for preview
+        if let searchTerm {
+            self.searchTerm = searchTerm
+        }
     }
     
     @MainActor
