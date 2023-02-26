@@ -26,30 +26,52 @@ MovieTime is an app that uses [The Movie Database API (TMDB)](https://developers
 
 
 ## Screens
-
-### HomeView
-![HomeView Screen](Screenshots/HomeView.png)
-
-`HomeView` presents a search bar to find movies to add to the watchlist. While the search bar is empty, the `DiscoverView` is overlaid on top.
-
-#### DiscoverView
-`DiscoverView` is a screen that presents multiple lists of movies to help the user find movies to add to their Watchlist. At the moment, the list of movies shown are: _Trending_, _Now Playing_ and _Upcoming_.
-
-
-### MovieDetailsView
-![MovieDetailsView Screen](Screenshots/MovieDetailsView.png)
-
-`MovieDetailsView` presents all the information related to a movie. It shows a cover and poster photos, overview of the movie, where to watch it, trailer and teaser videos as well as the cast (actors) that appear in it.
-
-### WatchlistView
-![WatchlistView Screen](Screenshots/WatchlistView.png)
-
-`WatchlistView` presents a grid of movies that the user has added to their Watchlist. The movies are persisted using `Core Data`.
-
-### SettingsView
-![SettingsView Screen](Screenshots/SettingsView.png)
-
-`SettingsView` shows a list of all the countries for which there is where to watch information (Streaming services and/or stores). The user can select which countries they want to see in the "Where to Watch" section of the `MovieDetailsView` screen. Their list of selected countries is persisted in `UserDefaults`.
+<table>
+	<thead>
+		<th>Description</th>
+		<th>Screenshots</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<h3>HomeView</h3>
+				<code>HomeView</code> presents a search bar to find movies to add to the watchlist. While the search bar is empty, the <code>DiscoverView</code> is overlaid on top.<br><br>
+				<h3>DiscoverView</h3>
+				<code>DiscoverView</code> is a screen that presents multiple lists of movies to help the user find movies to add to their Watchlist. At the moment, the list of movies shown are: <em>Trending</em>, <em>Now Playing</em> and <em>Upcoming</em>.
+			</td>
+			<td>
+				<img src="Screenshots/Thumbnails/HomeView.png" alt="HomeView Screen" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>MovieDetailsView</h3>
+				<code>MovieDetailsView</code> presents all the information related to a movie. It shows a cover and poster photos, overview of the movie, where to watch it, trailer and teaser videos as well as the cast (actors) that appear in it.
+			</td>
+			<td>
+				<img src="Screenshots/Thumbnails/MovieDetailsView.png" alt="MovieDetailsView Screen" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>WatchlistView</h3>
+				<code>WatchlistView</code> presents a grid of movies that the user has added to their Watchlist. The movies are persisted using <code>Core Data</code>.
+			</td>
+			<td>
+				<img src="Screenshots/Thumbnails/WatchlistView.png" alt="WatchlistView Screen" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>SettingsView</h3>
+				<code>SettingsView</code> shows a list of all the countries for which there is where to watch information (Streaming services and/or stores). The user can select which countries they want to see in the "Where to Watch" section of the <code>MovieDetailsView</code> screen. Their list of selected countries is persisted in <code>UserDefaults</code>.
+			</td>
+			<td>
+				<img src="Screenshots/Thumbnails/SettingsView.png" alt="SettingsView Screen" />
+			</td>
+		</tr>
+	</tbody>
+</table>
 
 
 ## Features that I want to add
