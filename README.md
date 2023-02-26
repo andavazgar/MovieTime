@@ -37,10 +37,11 @@ MovieTime is an app that uses [The Movie Database API (TMDB)](https://developers
 				<h3>HomeView</h3>
 				<code>HomeView</code> presents a search bar to find movies to add to the watchlist. While the search bar is empty, the <code>DiscoverView</code> is overlaid on top.<br><br>
 				<h3>DiscoverView</h3>
-				<code>DiscoverView</code> is a screen that presents multiple lists of movies to help the user find movies to add to their Watchlist. At the moment, the list of movies shown are: <em>Trending</em>, <em>Now Playing</em> and <em>Upcoming</em>.
+				<code>DiscoverView</code> is a screen that presents multiple lists of movies to help the user to populate their Watchlist. At the moment, the lists of movies shown are: <em>Trending</em>, <em>Now Playing</em> and <em>Upcoming</em>.
 			</td>
 			<td>
 				<img src="Screenshots/Thumbnails/HomeView.png" alt="HomeView Screen" />
+                <img src="Screenshots/Thumbnails/HomeView+Search.png" alt="HomeView with Search Screen" />
 			</td>
 		</tr>
 		<tr>
