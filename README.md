@@ -20,9 +20,8 @@ MovieTime is an app that uses [The Movie Database API (TMDB)](https://developers
 	- Used the `UIViewControllerRepresentable` protocol to manage a `SFSafariViewController` and present the trailer videos without leaving the app
 
 
-## Preview (YouTube Video)
-[![MovieTime App Preview Video Thumbnail](https://img.youtube.com/vi/DcC_YsreqoE/maxresdefault.jpg)](https://www.youtube.com/watch?v=DcC_YsreqoE "MovieTime App Preview Video. Click here to watch it!")
-
+## Preview
+![App Preview](Demo/Preview+Background.gif)
 
 
 ## Screens
@@ -40,8 +39,8 @@ MovieTime is an app that uses [The Movie Database API (TMDB)](https://developers
 				<code>DiscoverView</code> is a screen that presents multiple lists of movies to help the user to populate their Watchlist. At the moment, the lists of movies shown are: <em>Trending</em>, <em>Now Playing</em> and <em>Upcoming</em>.
 			</td>
 			<td>
-				<img src="Screenshots/Thumbnails/HomeView.png" alt="HomeView Screen" />
-                <img src="Screenshots/Thumbnails/HomeView+Search.png" alt="HomeView with Search Screen" />
+				<img src="Demo/Thumbnails/HomeView.png" alt="HomeView Screen" />
+                <img src="Demo/Thumbnails/HomeView+Search.png" alt="HomeView with Search Screen" />
 			</td>
 		</tr>
 		<tr>
@@ -50,7 +49,7 @@ MovieTime is an app that uses [The Movie Database API (TMDB)](https://developers
 				<code>MovieDetailsView</code> presents all the information related to a movie. It shows a cover and poster photos, overview of the movie, where to watch it, trailer and teaser videos as well as the cast (actors) that appear in it.
 			</td>
 			<td>
-				<img src="Screenshots/Thumbnails/MovieDetailsView.png" alt="MovieDetailsView Screen" />
+				<img src="Demo/Thumbnails/MovieDetailsView.png" alt="MovieDetailsView Screen" />
 			</td>
 		</tr>
 		<tr>
@@ -59,7 +58,7 @@ MovieTime is an app that uses [The Movie Database API (TMDB)](https://developers
 				<code>WatchlistView</code> presents a grid of movies that the user has added to their Watchlist. The movies are persisted using <code>Core Data</code>.
 			</td>
 			<td>
-				<img src="Screenshots/Thumbnails/WatchlistView.png" alt="WatchlistView Screen" />
+				<img src="Demo/Thumbnails/WatchlistView.png" alt="WatchlistView Screen" />
 			</td>
 		</tr>
 		<tr>
@@ -68,7 +67,7 @@ MovieTime is an app that uses [The Movie Database API (TMDB)](https://developers
 				<code>SettingsView</code> shows a list of all the countries for which there is where to watch information (Streaming services and/or stores). The user can select which countries they want to see in the "Where to Watch" section of the <code>MovieDetailsView</code> screen. Their list of selected countries is persisted in <code>UserDefaults</code>.
 			</td>
 			<td>
-				<img src="Screenshots/Thumbnails/SettingsView.png" alt="SettingsView Screen" />
+				<img src="Demo/Thumbnails/SettingsView.png" alt="SettingsView Screen" />
 			</td>
 		</tr>
 	</tbody>
