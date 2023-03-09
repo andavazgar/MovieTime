@@ -1,6 +1,7 @@
 # MovieTime
 
-MovieTime is an app that uses [The Movie Database API (TMDB)](https://developers.themoviedb.org/3) to allow users to keep track of the movies they want to watch (Watchlist) and where they can watch them (Streaming services). Also, MovieTime presents many lists of movies (Trending, Now Playing and Upcoming) to help the user build up their list of movies to watch.
+MovieTime is an app that uses [The Movie Database API (TMDB)](https://developers.themoviedb.org/3) to allow users to keep track of the movies they want to watch (Watchlist) and where they can watch them (Streaming services). Also, MovieTime presents many lists of movies (Trending, Now Playing and Upcoming) to help users build up their list of movies to watch.
+
 
 ## Technologies
 - SwiftUI
